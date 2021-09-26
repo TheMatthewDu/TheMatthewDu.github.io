@@ -18,8 +18,8 @@ h1 {letter-spacing: 6px}
 
     <!-- Header -->
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-        <h1 class="w3-xlarge">EDUCATION</h1>
         <h1>Matthew Du</h1>
+        <h2 class="w3-xlarge">SCHOOL</h2>
 
         <div class="w3-padding-32">
             <div class="w3-bar w3-border">
@@ -33,6 +33,67 @@ h1 {letter-spacing: 6px}
     </header>
 
     <h2>Courses Taken</h2>
+    <h3> University of Toronto St.George - Faculty of Applied Science &amp; Engineering </h3>
+    <h4>Winter 2022</h4>
+    <table>
+        <tbody><tr class="coursesHeader">
+            <th>Course Code</th>
+            <th>Title</th>
+        </tr>
+        <!----><tr data-ng-repeat="course in session.courses" class="courses">
+            <td>APS112H1 </td>
+            <td>ORIENTATION TO ENGINEERING</td>
+        </tr><!----><tr data-ng-repeat="course in session.courses" class="courses">
+            <td>CSC209H1 </td>
+            <td>Software Tools & Systems Programming </td>
+        </tr><!----><tr data-ng-repeat="course in session.courses" class="courses">
+            <td>ECE110H1 </td>
+            <td>ELECTRICAL FUNDAMENTALS </td>
+        </tr><!----><tr data-ng-repeat="course in session.courses" class="courses">
+            <td>HMU111H1 </td>
+            <td>Intro to Music & Society</td>
+        </tr><!----><tr data-ng-repeat="course in session.courses" class="courses">
+            <td>MIE191H1 </td>
+            <td>INTRODUCTION TO MECHANICAL & INDUSTRIAL ENGINEERING </td>
+        </tr><!---->
+        <!----><tr class="emph" data-ng-if="session.creditBased">
+        </tr><!----><tr data-ng-repeat="course in session.courses" class="courses">
+            <td>TMU131H1 </td>
+            <td>Music Theory II </td>
+        </tr><!---->
+        </tbody>
+    </table>
+
+    <h4>Fall 2021</h4>
+    <table>
+        <tbody><tr class="coursesHeader">
+            <th>Course Code</th>
+            <th>Title</th>
+        </tr>
+        <!----><tr data-ng-repeat="course in session.courses" class="courses">
+            <td>APS100H1 </td>
+            <td>ORIENTATION TO ENGINEERING</td>
+        </tr><!----><tr data-ng-repeat="course in session.courses" class="courses">
+            <td>APS110H1 </td>
+            <td>ENGINEERING CHEMISTRY & MATERIALS SCIENCE </td>
+        </tr><!----><tr data-ng-repeat="course in session.courses" class="courses">
+            <td>APS111H1 </td>
+            <td> ENGINEERING STRATEGIES & PRACTICE I </td>
+        </tr><!----><tr data-ng-repeat="course in session.courses" class="courses">
+            <td>CIV100H1 </td>
+            <td>MECHANICS</td>
+        </tr><!----><tr data-ng-repeat="course in session.courses" class="courses">
+            <td>CSC207H1 </td>
+            <td>Software Design</td>
+        </tr><!---->
+        <!----><tr class="emph" data-ng-if="session.creditBased">
+        </tr><!----><tr data-ng-repeat="course in session.courses" class="courses">
+            <td>CSC236H1 </td>
+            <td>Introduction to the Theory of Computation</td>
+        </tr><!---->
+        </tbody>
+    </table>
+
     <h3> University of Toronto St.George - Faculty of Arts &amp; Science</h3>
     <h4>Winter 2021</h4>
     <table>
