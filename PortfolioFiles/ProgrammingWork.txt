@@ -67,7 +67,7 @@ h1 {letter-spacing: 6px}
             the backend of this page can be found <a href="PortfolioFiles/ProgrammingWork.txt">here</a>.
         </p>
 
-        <p>Here is also some JavaScript. Source Code can be found <a href="PortfolioFiles/JavaScriptDemo.js">here</a></p>
+        <p>Here is also some JavaScript. Source Code can be found <a href="JavaScriptDemo.js">here</a></p>
         <button onclick="someScript()">Click Me!</button>
         <p id="initiationButton"></p>
         <p id="questionPrompts"></p>
