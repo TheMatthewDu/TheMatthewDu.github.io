@@ -10,6 +10,31 @@
 body,h1 {font-family: "Raleway", Arial, sans-serif}
 h1 {letter-spacing: 6px}
 .w3-row-padding img {margin-bottom: 12px}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #000000;
+  color: white;
+}
 </style>
 <body>
 
@@ -34,46 +59,79 @@ h1 {letter-spacing: 6px}
 
     <div class="w3-row-padding w3-grayscale" style="margin-bottom:64px">
         <h2>Python</h2>
-        <h3>Mark Book Program</h3>
-        <a href="https://github.com/TheMatthewDu/Mark_Book"> The Program</a>
-        <p>This is a mark book program that keeps track of marks achieved in
-            school. It computes the grade through weights of each deliverable
-            for an accurate representation of the grade. The GUI is developed
-            using the Tkinter Framework
-        </p>
-
-        <h3>Vector Simulation</h3>
-        <a href="https://github.com/TheMatthewDu/VectorSimulation">The Program</a>
-        <p> This is a vector simulation program using the python pygame
-            package. It demonstrates fundamental principles of linear
-            algebra, such as linear transformations and vector and matrix
-            algebra.
-        </p>
-
-<!--        <h3>Notebook Program</h3>-->
-<!--        <a href="https://github.com/TheMatthewDu/Notebook">The Program</a>-->
-<!--        <p>This is a small program that aids in the process of note taking. It-->
-<!--            allows the user to input shortcut commands and keyword statements-->
-<!--            and generates the final product into a LaTeX executable code. The-->
-<!--            GUI is developed using the Tkinter Framework-->
-<!--        </p>-->
+        <table>
+            <tbody>
+            <tr>
+                <th>Program</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/TheMatthewDu/Mark_Book">Mark-Book Program</a></td>
+                <td>This is a mark book program that keeps track of marks achieved in
+                    school. It computes the grade through weights of each deliverable
+                    for an accurate representation of the grade. The GUI is developed
+                    using the Tkinter Framework
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/TheMatthewDu/VectorSimulation">Vector Simulation</a></td>
+                <td>
+                    This is a vector simulation program using the python pygame
+                    package. It demonstrates fundamental principles of linear
+                    algebra, such as linear transformations and vector and matrix
+                    algebra.
+                </td>
+            </tr>
+            </tbody>
+        </table>
 
         <h2>Java</h2>
-        <h3>UofT TimeTable Tool Program</h3>
-        <a href="https://github.com/matthewrhdu/sout-this_is_our_teamname-forked-CSC207H1-Project">The Program</a>
-        <p>This is a program that was created as a part of the design project in the
-            Fall 2021 term of CSC207H1F at the University of Toronto St.George.
-            It is a timetable planning tool, that gathers information from the
-            UofT Course Finder. Users can search and add course or other tasks
-            and activities. They can load and unload to a serialized file with
-            their courses. Finally, a Depth First Search Algorithm is used to
-            automatically schedule multiple courses into the timetable
-        </p>
+        <table>
+            <tbody>
+            <tr>
+                <th>Program</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/matthewrhdu/sout-this_is_our_teamname-forked-CSC207H1-Project">UofT TimeTable Tool Program</a></td>
+                <td>
+                    This is a program that was created as a part of the design project in the
+                    Fall 2021 term of CSC207H1F at the University of Toronto St.George.
+                    It is a timetable planning tool, that gathers information from the
+                    UofT Course Finder using the JSoup library. Users can search and
+                    add course or other tasks and activities. They can load and
+                    unload to a serialized file with their courses. Finally,
+                    a Depth First Search Algorithm is used to automatically
+                    schedule multiple courses into the timetable.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2>C</h2>
+        <table>
+            <tbody>
+            <tr>
+                <th>Program</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/TheMatthewDu/CVersionPairWiseComparisonHelper">PairWise Comparison Tool</a></td>
+                <td>
+                    Here is a simple C program that serves as a placeholder for
+                    demonstrating proficiency in the C programming language. It is
+                    still a work in progress to aid in the pairwise comparison
+                    decision-making strategy. I hope to complete this project, and
+                    more projects in the upcoming weeks and months as I learn more C.
+                </td>
+            </tr>
+            </tbody>
+        </table>
 
         <h2>HTML/CSS/JavaScript</h2>
         <h3>This site</h3>
         <p>Yes! This page is an HTML page hosted on Github Pages! The code for
-            the backend of this page can be found <a href="PortfolioFiles/ProgrammingWork.txt">here</a>.
+            the backend of this page can be found <a href="https://github.com/TheMatthewDu/TheMatthewDu.github.io">here</a>.
         </p>
 
         <p>Here is also some JavaScript. Source Code can be found <a href="PortfolioFiles/JavaScriptDemo.js">here</a></p>
@@ -82,19 +140,6 @@ h1 {letter-spacing: 6px}
         <p id="questionPrompts"></p>
         <p id="responseButtons"></p>
         <script src="PortfolioFiles/JavaScriptDemo.js"></script>
-
-
-        <h2>C & C++</h2>
-        <h3>PairWise Comparison Tool</h3>
-        <a href="https://github.com/TheMatthewDu/CVersionPairWiseComparisonHelper">The Program</a>
-        <p>
-            Here is a simple C program that serves as a placeholder for
-            demonstrating proficiency in the C programming language. It is
-            still a work in progress to aid in the pairwise comparison
-            decision-making strategy. I hope to complete this project, and
-            more projects in the upcoming weeks and months as I progress and
-            learn more C and C++!
-        </p>
     </div>
 
 
