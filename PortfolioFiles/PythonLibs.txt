@@ -1,0 +1,16 @@
+Here is a list of some Python libraries I am familiar with (in no particular order):
+- numpy
+- scipy
+- sympy
+- matplotlib
+- timeit
+- time
+- typing
+- pygame
+- tkinter
+- csv
+- json
+- pytest
+- doctest
+- pyunit
+- sqlite (To some extent)
