@@ -69,13 +69,13 @@ body {
 }
 
 a:link {
-    color: cyan;
+    color: white;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:visited {
-    color: lightblue;
+    color: white;
     background-color: transparent;
     text-decoration: none;
 }
