@@ -1,0 +1,132 @@
+/* Style the body */
+
+/* Header/Logo Title */
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #020b6e;
+    color: white;
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+}
+
+/* Page Content */
+.content {
+    padding:20px;
+}
+
+.centered_content {
+    text-align: center;
+    padding:20px;
+}
+
+body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: top;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:visited {
+    color: #f2f2f2;
+}
+
+.topnav a:hover {
+    background-color: #0a97fc;
+}
+
+.the_footer {
+    padding: 10px;
+    text-align: center;
+    background: #020b6e;
+    color: white;
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+}
+
+.the_footer a:link {
+    color: white;
+}
+
+.the_footer a:visited {
+    color: lightblue;
+}
+
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd){
+    background-color: #d2d2d2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #000000;
+    color: white;
+}

@@ -14,3 +14,5 @@ Here is a list of some Python libraries I am familiar with (in no particular ord
 - doctest
 - pyunit
 - sqlite (To some extent)
+- random
+- math
