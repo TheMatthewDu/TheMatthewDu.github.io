@@ -4,11 +4,13 @@
 .header {
     padding: 10px;
     text-align: center;
-    background: #020b6e;
+    background: #4169E1;
     color: white;
     font-size: 16px;
-    font-family: Calibri, sans-serif;
+    font-family: Garamond, serif;
     font-weight: bold;
+    border-bottom-left-radius: 40% 10%;
+    border-bottom-right-radius: 40% 10%;
 }
 
 /* Page Content */
@@ -23,7 +25,7 @@
 
 body {
     margin: 0;
-    font-family: Calibri, sans-serif;
+    font-family: Garamond, serif;
 }
 
 .topnav {
@@ -44,16 +46,16 @@ body {
 }
 
 .topnav a:hover {
-    background-color: #0a97fc;
+    background-color: #87CEFA;
 }
 
 .the_footer {
     padding: 10px;
     text-align: center;
-    background: #020b6e;
+    background: #4169E1;
     color: white;
     font-size: 16px;
-    font-family: Calibri, sans-serif;
+    font-family: Garamond, serif;
     font-weight: bold;
 }
 
@@ -66,7 +68,7 @@ body {
 }
 
 a:link {
-    color: blue;
+    color: #0000FF;
     background-color: transparent;
     text-decoration: none;
 }
@@ -102,7 +104,7 @@ a:hover {
 }
 
 table {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Console', monospace;
     border-collapse: collapse;
     width: 100%;
 }
