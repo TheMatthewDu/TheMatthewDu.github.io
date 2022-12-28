@@ -6,7 +6,7 @@
 .header {
     padding: 10px;
     text-align: center;
-    background: #4169E1;
+    background: #4B0082;
     color: white;
     font-size: 16px;
     font-family: Tahoma, sans-serif;
@@ -31,10 +31,12 @@ body {
 .the_footer {
     padding: 10px;
     text-align: center;
-    background: #000000;
+    background:	#4B0082;
     color: white;
     font-size: 16px;
     font-family: Tahoma, serif;
+    border-top-left-radius: 50% 10%;
+    border-top-right-radius: 50% 10%;
 }
 
 .the_footer a:link {
