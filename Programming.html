@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/main_style.css">
-    <link rel="stylesheet" href="src/css/slideshow_banner.css">
+    <link rel="stylesheet" href="src/css/topnav.css">
     <link rel="stylesheet" href="src/css/table.css">
     <style>
         .hero-image {
@@ -17,19 +17,20 @@
 </head>
 <body>
 
+<script src="src/javascript/topnav.js"></script>
+
 <!-- Header -->
 <header class="header hero-image">
-    <div class="hero-text">
-        <h1>Matthew Du</h1>
-        <h2>MY PROGRAMMING WORK</h2>
-
-        <div class="topnav">
-            <a href="index.html">Home</a>
-            <a href="School.html">Education</a>
-            <a href="Mechanical_Engineering.html">Mechanical</a>
-            <a href="Programming.html">Programming</a>
-            <a href="Music.html">Music</a>
-        </div>
+    <h1>Matthew Du</h1>
+    <h2> PROGRAMMING WORK </h2>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="School.html">Education</a>
+        <a href="Mechanical_Engineering.html">Mechanical</a>
+        <a class="active" href="Programming.html">Programming</a>
+        <a href="Music.html">Music</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            &#9776;</a>
     </div>
 </header>
 

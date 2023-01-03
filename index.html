@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/main_style.css">
-    <link rel="stylesheet" href="src/css/slideshow_banner.css">
+    <link rel="stylesheet" href="src/css/topnav.css">
     <style>
         .hero-image {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -15,29 +15,29 @@
         .profile_img {
             border-radius: 50%;
         }
-
-        h1 {
-            font-size: 10vh;
-        }
     </style>
 </head>
 <body>
 
-<div class="header hero-image">
-    <div class="hero-text">
-        <h1>Matthew Du</h1>
-        <div class="topnav">
-            <a href="index.html">Home</a>
-            <a href="School.html">Education</a>
-            <a href="Mechanical_Engineering.html">Mechanical</a>
-            <a href="Programming.html">Programming</a>
-            <a href="Music.html">Music</a>
-        </div>
+<script src="src/javascript/topnav.js"></script>
+
+<header class="header hero-image">
+    <h1>Matthew Du</h1>
+    <h2> WELCOME </h2>
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="School.html">Education</a>
+        <a href="Mechanical_Engineering.html">Mechanical</a>
+        <a href="Programming.html">Programming</a>
+        <a href="Music.html">Music</a>
+        <a href="javascript:void(0);" class="icon"
+           onclick="myFunction()">&#9776;</a>
     </div>
-</div>
+</header>
+
 
 <div class="centered_content">
-    <h2>Welcome to my Portfolio Website!</h2>
+    <h3>Welcome to my Portfolio Website!</h3>
 
     <p> This website contains samples and documentation of some of my
         work that I have done.</p>
@@ -52,7 +52,7 @@
 
 <div class="content">
     <div class="row">
-        <div class="column">
+        <div class="column" style="text-align: center">
             <img src="src/images/profile_pic_cropped.jpeg" class="profile_img"
                  width="425" height="424" alt="Profile Image">
         </div>
@@ -166,5 +166,6 @@
         Linkedin: theMatthewDu
     </p>
 </footer>
+
 </body>
 </html>
