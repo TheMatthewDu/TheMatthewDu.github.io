@@ -19,7 +19,7 @@
 
 .topnav .icon {
     display: none;
-    font-size: 8px;
+    font-size: 3vh;
 }
 
 .dropdown {
@@ -78,7 +78,7 @@
         display: block;
     }
 
-    .topnav a:not(.active), .dropdown .dropbtn {
+    .topnav a, .dropdown .dropbtn {
         display: none;
     }
 
