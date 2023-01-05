@@ -13,6 +13,6 @@ Here is a list of some Python libraries I am familiar with (in no particular ord
 - pytest
 - doctest
 - pyunit
-- sqlite (To some extent)
+- sqlite
 - random
 - math
