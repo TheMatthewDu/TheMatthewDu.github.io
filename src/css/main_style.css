@@ -130,7 +130,6 @@ a:hover {
 }
 
 .hero-image {
-    animation: animatetop 1s;
     height: 50%;
     background-position: 10% 40%;
     background-repeat: no-repeat;
@@ -138,14 +137,3 @@ a:hover {
     position: relative;
 }
 
-@keyframes
-animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-    to {
-        top: 0;
-        opacity: 1
-    }
-}
