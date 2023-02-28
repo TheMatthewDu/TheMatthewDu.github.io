@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="src/css/style.css">
+	<link rel="stylesheet" href="src/css/dropdown.css">
+	<link rel="stylesheet" href="src/css/sidebar.css">
+	<link rel="stylesheet" href="src/css/slideshow_banner.css">
+	<title>Matthew Du Portfolio Website</title>
+</head>
+<body>
+<div class="navbar">
+	<img src="src/images/LogoDisplay.png" class="logo_img split" alt="Logo">
+
+	<a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+	<a href="My_work.html"><i class="fa fa-fw fa-cogs"></i> My Work</a>
+	<a href="CV.html" class="active"><i class="fa fa-fw fa-briefcase"></i> CV</a>
+	<a href="Research.html"><i class="fa fa-fw fa-graduation-cap"></i> Research</a>
+</div>
+
+<div class="sidenav">
+	<a href="My_work.html"> Dashboard </a>
+	<a href="MyWorkProgramming.html"> Programming </a>
+	<a href="MyWorkMechanical.html"> Mechanical </a>
+	<a href="MyWorkMusic.html"> Music </a>
+</div>
+
+<div class="main">
+	<h2> Gearbox </h2>
+	<p>
+		This is a design and 3D printing for a gearbox. The design utilizes a
+		3:1 gear reduction ratio, where the input and output shafts are
+		offset by 90 degrees and are not collinear. The design features 2
+		spur gears to achieve the gear ratio, and two bevel gears at a ratio
+		of 1:1 to achieve the 90 degrees offset.
+	</p>
+
+	<div class="slideshow-container">
+		<div class="mySlides1 fade">
+			<div class="numbertext">1 / 4</div>
+			<img src="src/images/Gearbox_pic_2.jpg" style="width: 100%"
+				 alt="Gearbox Assembled View">
+			<div class="text">Gearbox Assembled View 1</div>
+		</div>
+
+		<div class="mySlides1 fade"  style="display: none">
+			<div class="numbertext">2 / 4</div>
+			<img src="src/images/Gearbox_pic_1.jpg" style="width: 100%"
+				 alt="Gearbox Exploded View">
+			<div class="text">Gearbox Exploded View</div>
+		</div>
+
+		<div class="mySlides1 fade" style="display: none">
+			<div class="numbertext">3 / 4</div>
+			<img src="src/images/Gearbox_pic_3.jpg" style="width: 100%"
+				 alt="Gearbox Printed View 1">
+			<div class="text">Gearbox Printed View 1</div>
+		</div>
+
+		<div class="mySlides1 fade" style="display: none">
+			<div class="numbertext">4 / 4</div>
+			<<img src="src/images/Gearbox_pic_4.jpg" style="width: 100%"
+				  alt="Gearbox Printed View 2 ">
+			<div class="text">Gearbox Printed View 2</div>
+		</div>
+
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+	</div>
+
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1, 1)"></span>
+		<span class="dot" onclick="currentSlide(2, 1)"></span>
+		<span class="dot" onclick="currentSlide(3, 1)"></span>
+		<span class="dot" onclick="currentSlide(4, 1)"></span>
+	</div>
+
+	<h2 id="pnp"> Pick and Place Machine </h2>
+	<p>
+		This is a conceptual design of a Computerised Numerical Controlled
+		(CNC) machine that is intended for assembling Surface Mounted
+		Technologies (SMT), commonly known as a Pick and Place (PNP) Machine.
+		The project involved using Solidworks Computer Aided Design Software
+		to generate a Conceptual Design of the device and prepare engineering
+		documentation and drawings justifying the design.
+	</p>
+
+	<div class="slideshow-container">
+		<div class="mySlides2 fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="src/images/PNP_pic_1.png" style="width:100%"
+				 alt="PNP machine view 1">
+			<div class="text">PNP Machine View 1</div>
+		</div>
+
+		<div class="mySlides2 fade" style="display: none">
+			<div class="numbertext">2 / 3</div>
+			<img src="src/images/PNP_pic_2.png" style="width:100%"
+				 alt="PNP machine view 2">
+			<div class="text">PNP Machine View 2</div>
+		</div>
+
+		<div class="mySlides2 fade" style="display: none">
+			<div class="numbertext">3 / 3</div>
+			<img src="src/images/PNP_pic_3.png" style="width:100%"
+				 alt="PNP machine view 3">
+			<div class="text">PNP Machine View 3</div>
+		</div>
+
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+	</div>
+
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1, 2)"></span>
+		<span class="dot" onclick="currentSlide(2, 2)"></span>
+		<span class="dot" onclick="currentSlide(3, 2)"></span>
+	</div>
+
+	<h2 id="liu_lab_project">Design and Testing of Vision Algorithms for
+		an Interactive Soft Robotic Hand </h2>
+	<p>This is the summer research project that I was involved with in the
+		summer of 2022 at the <a href="https://liulab.mie.utoronto.ca/">
+			Microfluidics and BioMEMS Lab (MBL)</a> at the University of
+		Toronto in collaboration with Zhanfeng Zhou and under the
+		supervision of Dr Xinyu Liu. I was worked on Computer Vision and
+		image segmentation and smoothing algorithms for Soft Robotic Arm.
+	</p>
+	<p>I presented my findings at the annual University of Toronto
+		Undergraduate Engineering Research Day Conference (UnERD). The
+		abstract for the submission can be found <a href="src/portfolio_files/Abstract%20Template.pdf">here</a>. This
+		project was also later presented in an Artificial Intelligence (AI)
+		conference with the President Yoon Suk-yeol of the Republic of Korea
+		at the University of Toronto in September 2022. More details regarding
+		the conference can be found
+		<a
+				href="https://www.koreatimes.co.kr/www/nation/2022/09/356_336616.html">here</a>
+	</p>
+	<img src="src/images/SK_president_pic.png" alt="Demonstration of the Robotic Arm in meeting with the President of the Republic of Korea">
+
+	<h2>Binary Bot 2.0</h2>
+	<p>
+		Meet BinaryBot (2.0). It is an autonomous robot created using Lego
+		Mindstorms EV3 that I designed and programmed myself. It reads black and
+		white lines as 1s and 0s respectively, and converts and writes it in
+		Base 10 (Decimal). In the following video, it demonstrates two samples
+		of BinaryBot in action.
+	</p>
+
+	<p>
+		The 2.0 at the end of its name is a nod to a previous version of the same
+		robot I had made many years ago with a fellow partner using the Lego
+		Mindstorms NXT set. Unfortunately, the footage of that robot has since
+		been lost.
+	</p>
+
+	<div class="adjust_media">
+		<iframe src="https://drive.google.com/file/d/1fT4SQ3dj7nCmKtTDgRcRtOt3G6C20Tni/preview"
+				allow="autoplay"
+				allowfullscreen>
+		</iframe>
+	</div>
+</div>
+<script src="src/js/slide_control.js"></script>
+</body>
+</html>

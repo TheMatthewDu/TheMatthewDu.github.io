@@ -1,0 +1,41 @@
+.sidenav {
+    float: left;
+    height: 80%;
+    width: 160px;
+    position: fixed;
+    left: 0;
+    background-color: inherit;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    font-size: inherit;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: inherit;
+    font-weight: bold;
+}
+
+.main {
+    float: left;
+    margin-left: 160px;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .sidenav {
+        width: 100%;
+        position: relative;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 0 0;
+    }
+}

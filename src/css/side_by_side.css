@@ -1,0 +1,16 @@
+td {
+    text-align: left;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 900px){
+    .column {
+        float: left;
+        width: 100%;
+    }
+}

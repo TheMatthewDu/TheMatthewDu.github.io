@@ -1,166 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> Matthew Du Home Page </title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="src/css/main_style.css">
-    <link rel="stylesheet" href="src/css/topnav.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/dropdown.css">
+    <link rel="stylesheet" href="src/css/side_by_side.css">
+    <title>Matthew Du Portfolio Website</title>
     <style>
-        .hero-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-        }
-
-        .profile_img {
-            border-radius: 50%;
+        img {
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <img src="src/images/LogoDisplay.png" class="logo_img split" alt="Logo">
 
-<script src="src/javascript/topnav.js"></script>
-
-<header class="header hero-image">
-    <h1>Matthew Du</h1>
-    <h2> WELCOME </h2>
-    <div class="topnav" id="myTopnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="School.html">Education</a>
-        <a href="Mechanical_Engineering.html">Mechanical</a>
-        <a href="Programming.html">Programming</a>
-        <a href="Music.html">Music</a>
-        <a href="javascript:void(0);" class="icon"
-           onclick="myFunction()">&#9776;</a>
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="My_work.html"><i class="fa fa-fw fa-cogs"></i> My Work</a>
+        <a href="CV.html" class="active"><i class="fa fa-fw fa-briefcase"></i> CV</a>
+        <a href="Research.html"><i class="fa fa-fw fa-graduation-cap"></i> Research</a>
     </div>
-</header>
-
-
-<div class="centered_content">
-    <h3>Welcome to my Portfolio Website!</h3>
-
-    <p> This website contains samples and documentation of some of my
-        work that I have done.</p>
-
-    <p>
-        Email: matthew.du AT mail.utoronto.ca <br>
-        GitHub: theMatthewDu <br>
-        Linkedin: theMatthewDu
-    </p>
-</div>
-
-
-<div class="content">
-    <div class="row">
-        <div class="column" style="text-align: center">
-            <img src="src/images/profile_pic_cropped.jpeg" class="profile_img"
-                 style="width: 50%; height: auto" alt="Profile Image">
-        </div>
-        <div class="column">
-            <p class="bottom-three">
-                I am currently a second-year <a
-                    href="https://www.mie.utoronto.ca/">
-                Mechanical Engineering</a> student studying at the
-                University of Toronto, with triple minors in <a
-                    href="https://www.cs.utoronto.ca">Computer Science</a> (the
-                one offered by the Faculty of Arts and Science),
-                <a
-                        href="https://engineering.calendar.utoronto.ca/minor-robotics-and-mechatronics-aeminram">Robotics and Mechatronics</a>, and <a
-                    href="https://engineering.calendar.utoronto.ca/minor-engineering-business-aeminbus">Engineering Business</a>.
-            </p>
-            <p>
-                I am interested in a wide variety of topics and disciplines
-                across Engineering and Computer Science, such as:
-            </p>
-            <ul>
-                <li> Design and Fabrication of Mechatronics Systems </li>
-                <li> Robotics Control &amp; Programming </li>
-                <li> Computational &amp; Theoretical Fluid Mechanics </li>
-                <li> Computer Vision &amp; Geometry Processing </li>
-                <li> Interactive Robotics &amp; Human Robot Interaction </li>
-                <lI> Machine Learning </lI>
-                <li> Algorithm Design </li>
-            </ul>
-
-            <p>
-                I aspire to become a robotics engineer in the future, working
-                on personal, wearable, and assistive robotics and electronics
-                to help people by automating repetitive tasks. While working
-                in research labs and school clubs, I have noticed that,
-                despite the labour involved and the overall utility of
-                robots, people are not using them and are not integrated into
-                society. I want to change that and build robots that people
-                can use to enrich their lives, not just hear about how others
-                use them on the news.
-            </p>
-
-            <p>
-                Some soft skills that I possess are excellent creativity and
-                innovation, as well as strong leadership and ethical
-                judgment. I am known to be reliable, assertive, and highly
-                organized in teams, but currently working on how to work
-                better and delegate tasks more equally.
-            </p>
-
-            <p class="bottom-three">
-                Outside school, I am an avid musical performer and
-                arranger/composer with various musical groups in the Greater
-                Toronto Area. My primary instrument is the Violin, but I am
-                also proficient in numerous other instruments, such as Viola,
-                Clarinet, Bass Clarinet, and Saxophone, to name a few.
-            </p>
-        </div>
+    <div class="column">
+        <img src="src/images/profile_t.png" alt="Profile Picture of Matthew Du">
     </div>
+    <div class="column">
+        <h1> Matthew Du</h1>
+        <hr>
+        <p>
+            <a class="fa fa-fw fa-envelope" href="mailto:matthew.du@mail.utoronto.ca"></a>
+            <a class="fa fa-fw fa-github" href="https://github.com/TheMatthewDu"></a>
+            <a class="fa fa-fw fa-linkedin" href="https://www.linkedin.com/in/thematthewdu/"></a>
+        </p>
+        <p>
+            I am currently a second-year <a href="https://www.mie.utoronto.ca/">
+            Mechanical Engineering</a> student studying at the
+            University of Toronto with way too many minors, including a minor in <a href="https://web.cs.toronto.edu/">Computer Science</a> (the one offered by the Faculty of Arts and Science at the University of Toronto).
+        </p>
 
-    <h3> Certifications and Achievements </h3>
-    <ul>
-        <li>Royal Conservatory of Music Level 10 Violin First
-            Class Honours
-        </li>
-        <li> Royal Conservatory of Music Level 10 Harmony &
-            History First class Honours </li>
-        <li> Royal Conservatory of Music Level 8 Clarinet
-            Honours </li>
-        <li> University of Toronto Faculty of Arts and Science Dean's List
-            Scholar Fall 2020 & Winter 2021 </li>
-        <li> University of Toronto Faculty of Applied Science and Engineering
-            Dean's List Scholar Winter 2022 </li>
-        <li> Victoria University at the University of Toronto
-            <a
-                    href="https://www.vic.utoronto.ca/current-students/finances/victoria-college-academic-scholarships-and-awards/"> The Regents In-Course Scholarship</a>
-        </li>
-        <li> Toronto Kiwanis Music Festival 2019 Level 10 Violin List A & D 3rd
-            place </li>
-    </ul>
+        <p>
+            I am interested in a wide variety of subjects, with particular focus in,
+        </p>
+        <ul>
+            <li>Robotics and Mechatronics</li>
+            <li>Machine Learning</li>
+            <li>Computer Vision &amp; graphics</li>
+            <li>Assistive and Personal Devices</li>
+        </ul>
 
-    <h3> Current Extracurricular Activities </h3>
-    <ul>
-        <li> <b> Faculty Council Standing Committees (FCSC)
-            Undergraduate Representative </b> Academic Appeals
-            Board (Undergraduate) </li>
-        <li> <b> University of Toronto Engineering Society (EngSoc)
-        </b> Academic Advocacy Committee &amp; Subcommittee for
-            Academic Supports
-        </li>
-    </ul>
+        <p>Particularly, I enjoy working on projects that span across multiple
+            disciplines, whether that would be a personal device combining
+            elements of computer vision and mechatronics, or the
+            study of human factors in human robot interaction</p>
 
-    <h3>Past Extra Curricular Activities</h3>
-    <h4>University of Toronto</h4>
-    <ul>
-        <li> <b>University of Toronto Skule Orchestra</b> Second Violin (<i>Fall 2021</i>) </li>
-    </ul>
-</div>
+        <p>
+            I am also the co-president and co-founder of the newly revived
+            Student Branch of the Canadian Society of Mechanical Engineers
+            (CSME) at the University of Toronto. It is a professional
+            development organization designed to help bridge the gap between
+            academia and industry for mechanical engineering students at the
+            University of Toronto. Since it is relatively new, we are still
+            setting things up and building our network. If you are an
+            organization that would like to partner with us in hosting events
+            to gain access to talented mechanical engineering students at the University of Toronto,
+            feel free to email me at <a href="mailto:matthew.du@mail.utoronto.ca">matthew.du@mail.utoronto.ca</a>.
+        </p>
 
-<footer class="the_footer">
-    <a class="fa fa-envelope" href="mailto:matthewrhdu@outlook.com">&nbsp;</a>
-    <a class="fa fa-github" href="https://github.com/TheMatthewDu">&nbsp;</a>
-    <a class="fa fa-linkedin" href="https://www.linkedin.com/in/thematthewdu/">&nbsp;</a>
-    <p>
-        Email: matthew.du AT mail.utoronto.ca <br>
-        GitHub: theMatthewDu <br>
-        Linkedin: theMatthewDu
-    </p>
-</footer>
-
+        <p class="bottom-three">
+            Outside school, I am an avid musical performer and
+            arranger/composer with various musical groups in the Greater
+            Toronto Area. My primary instrument is the Violin, but I am
+            also proficient in numerous other instruments, such as Viola,
+            Clarinet, Bass Clarinet, and Saxophone, to name a few.
+        </p>
+    </div>
 </body>
 </html>
