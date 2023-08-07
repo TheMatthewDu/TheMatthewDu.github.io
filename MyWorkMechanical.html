@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="src/css/style.css">
 	<link rel="stylesheet" href="src/css/dropdown.css">
 	<link rel="stylesheet" href="src/css/sidebar.css">
@@ -11,16 +10,14 @@
 </head>
 <body>
 <div class="navbar">
-	<img src="src/images/LogoDisplay.png" class="logo_img split" alt="Logo">
-
+	<a href="#" class="split"> Matthew Du</a>
 	<a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-	<a href="My_work.html"><i class="fa fa-fw fa-cogs"></i> My Work</a>
+	<a href="MyWork.html"><i class="fa fa-fw fa-cogs"></i> My Work</a>
 	<a href="CV.html" class="active"><i class="fa fa-fw fa-briefcase"></i> CV</a>
-	<a href="Research.html"><i class="fa fa-fw fa-graduation-cap"></i> Research</a>
 </div>
 
 <div class="sidenav">
-	<a href="My_work.html"> Dashboard </a>
+	<a href="MyWork.html"> Dashboard </a>
 	<a href="MyWorkProgramming.html"> Programming </a>
 	<a href="MyWorkMechanical.html"> Mechanical </a>
 	<a href="MyWorkMusic.html"> Music </a>
@@ -36,48 +33,50 @@
 		of 1:1 to achieve the 90 degrees offset.
 	</p>
 
-	<div class="slideshow-container">
-		<div class="mySlides1 fade">
-			<div class="numbertext">1 / 4</div>
-			<img src="src/images/gearbox/Gearbox_pic_2.jpg" style="width: 100%"
-				 alt="Gearbox Assembled View">
-			<div class="text">Gearbox Assembled View 1</div>
+	<div style="width: 50%">
+		<div class="slideshow-container">
+			<div class="mySlides1 fade">
+				<div class="numbertext">1 / 4</div>
+				<img src="src/images/gearbox/Gearbox_pic_2.jpg" style="width: 100%"
+					 alt="Gearbox Assembled View">
+				<div class="text">Gearbox Assembled View 1</div>
+			</div>
+
+			<div class="mySlides1 fade"  style="display: none">
+				<div class="numbertext">2 / 4</div>
+				<img src="src/images/gearbox/Gearbox_pic_1.jpg" style="width: 100%"
+					 alt="Gearbox Exploded View">
+				<div class="text">Gearbox Exploded View</div>
+			</div>
+
+			<div class="mySlides1 fade" style="display: none">
+				<div class="numbertext">3 / 4</div>
+				<img src="src/images/gearbox/Gearbox_pic_3.jpg" style="width: 100%"
+					 alt="Gearbox Printed View 1">
+				<div class="text">Gearbox Printed View 1</div>
+			</div>
+
+			<div class="mySlides1 fade" style="display: none">
+				<div class="numbertext">4 / 4</div>
+				<img src="src/images/gearbox/Gearbox_pic_4.jpg" style="width: 100%"
+					  alt="Gearbox Printed View 2 ">
+				<div class="text">Gearbox Printed View 2</div>
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 		</div>
 
-		<div class="mySlides1 fade"  style="display: none">
-			<div class="numbertext">2 / 4</div>
-			<img src="src/images/gearbox/Gearbox_pic_1.jpg" style="width: 100%"
-				 alt="Gearbox Exploded View">
-			<div class="text">Gearbox Exploded View</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1, 1)"></span>
+			<span class="dot" onclick="currentSlide(2, 1)"></span>
+			<span class="dot" onclick="currentSlide(3, 1)"></span>
+			<span class="dot" onclick="currentSlide(4, 1)"></span>
 		</div>
-
-		<div class="mySlides1 fade" style="display: none">
-			<div class="numbertext">3 / 4</div>
-			<img src="src/images/gearbox/Gearbox_pic_3.jpg" style="width: 100%"
-				 alt="Gearbox Printed View 1">
-			<div class="text">Gearbox Printed View 1</div>
-		</div>
-
-		<div class="mySlides1 fade" style="display: none">
-			<div class="numbertext">4 / 4</div>
-			<<img src="src/images/gearbox/Gearbox_pic_4.jpg" style="width: 100%"
-				  alt="Gearbox Printed View 2 ">
-			<div class="text">Gearbox Printed View 2</div>
-		</div>
-
-		<!-- Next and previous buttons -->
-		<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-	</div>
-
-	<br>
-
-	<!-- The dots/circles -->
-	<div style="text-align:center">
-		<span class="dot" onclick="currentSlide(1, 1)"></span>
-		<span class="dot" onclick="currentSlide(2, 1)"></span>
-		<span class="dot" onclick="currentSlide(3, 1)"></span>
-		<span class="dot" onclick="currentSlide(4, 1)"></span>
 	</div>
 
 	<h2 id="pnp"> Pick and Place Machine </h2>
@@ -90,40 +89,42 @@
 		documentation and drawings justifying the design.
 	</p>
 
-	<div class="slideshow-container">
-		<div class="mySlides2 fade">
-			<div class="numbertext">1 / 3</div>
-			<img src="src/images/PNP/PNP_pic_1.png" style="width:100%"
-				 alt="PNP machine view 1">
-			<div class="text">PNP Machine View 1</div>
+	<div style="width: 50%">
+		<div class="slideshow-container">
+			<div class="mySlides2 fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="src/images/PNP/PNP_pic_1.png" style="width:100%"
+					 alt="PNP machine view 1">
+				<div class="text">PNP Machine View 1</div>
+			</div>
+
+			<div class="mySlides2 fade" style="display: none">
+				<div class="numbertext">2 / 3</div>
+				<img src="src/images/PNP/PNP_pic_2.png" style="width:100%"
+					 alt="PNP machine view 2">
+				<div class="text">PNP Machine View 2</div>
+			</div>
+
+			<div class="mySlides2 fade" style="display: none">
+				<div class="numbertext">3 / 3</div>
+				<img src="src/images/PNP/PNP_pic_3.png" style="width:100%"
+					 alt="PNP machine view 3">
+				<div class="text">PNP Machine View 3</div>
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
 		</div>
 
-		<div class="mySlides2 fade" style="display: none">
-			<div class="numbertext">2 / 3</div>
-			<img src="src/images/PNP/PNP_pic_2.png" style="width:100%"
-				 alt="PNP machine view 2">
-			<div class="text">PNP Machine View 2</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1, 2)"></span>
+			<span class="dot" onclick="currentSlide(2, 2)"></span>
+			<span class="dot" onclick="currentSlide(3, 2)"></span>
 		</div>
-
-		<div class="mySlides2 fade" style="display: none">
-			<div class="numbertext">3 / 3</div>
-			<img src="src/images/PNP/PNP_pic_3.png" style="width:100%"
-				 alt="PNP machine view 3">
-			<div class="text">PNP Machine View 3</div>
-		</div>
-
-		<!-- Next and previous buttons -->
-		<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-	</div>
-
-	<br>
-
-	<!-- The dots/circles -->
-	<div style="text-align:center">
-		<span class="dot" onclick="currentSlide(1, 2)"></span>
-		<span class="dot" onclick="currentSlide(2, 2)"></span>
-		<span class="dot" onclick="currentSlide(3, 2)"></span>
 	</div>
 
 	<h2 id="liu_lab_project">Design and Testing of Vision Algorithms for
@@ -151,56 +152,58 @@
 
 	<p>Here are a collage of images of the work I did</p>
 
-	<div class="slideshow-container">
-		<div class="mySlides3 fade">
-			<div class="numbertext">1 / 5</div>
-			<img src="src/images/LiuLab/Vision_based_grasping3.png" style="width:100%"
-				 alt="Sample of Pick and Placing application">
-			<div class="text">Sample of Point Cloud Merging for Pick and Placement Application</div>
+	<div style="width: 50%;">
+		<div class="slideshow-container">
+			<div class="mySlides3 fade">
+				<div class="numbertext">1 / 5</div>
+				<img src="src/images/LiuLab/Vision_based_grasping3.png" style="width:100%"
+					 alt="Sample of Pick and Placing application">
+				<div class="text">Sample of Point Cloud Merging for Pick and Placement Application</div>
+			</div>
+
+			<div class="mySlides3 fade" style="display: none">
+				<div class="numbertext">2 / 5</div>
+				<img src="src/images/LiuLab/Grasp_sample2.png" style="width:100%"
+					 alt="Sample of Robotic Grasping">
+				<div class="text">Sample of Robotic Grasping</div>
+			</div>
+
+			<div class="mySlides3 fade" style="display: none">
+				<div class="numbertext">3 / 5</div>
+				<img src="src/images/LiuLab/YOLO_PLAN.png" style="width:100%"
+					 alt="Sample of RGB and Depth image, and image segmentation using YOLO">
+				<div class="text">Sample of RGB and Depth image</div>
+			</div>
+
+			<div class="mySlides3 fade" style="display: none">
+				<div class="numbertext">4 / 5</div>
+				<img src="src/images/LiuLab/mask4.png" style="width:100%"
+					 alt="Sample of YOLO algorithm for image segmentation">
+				<div class="text">Sample of YOLO algorithm for item segmentation</div>
+			</div>
+
+			<div class="mySlides3 fade" style="display: none">
+				<div class="numbertext">5 / 5</div>
+				<img src="src/images/LiuLab/CNN_Structure.jpg" style="width:100%"
+					 alt="Architecture of 3D CNN">
+				<div class="text">Architecture of 3D-CNN</div>
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
 		</div>
 
-		<div class="mySlides3 fade" style="display: none">
-			<div class="numbertext">2 / 5</div>
-			<img src="src/images/LiuLab/Grasp_sample2.png" style="width:100%"
-				 alt="Sample of Robotic Grasping">
-			<div class="text">Sample of Robotic Grasping</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1, 3)"></span>
+			<span class="dot" onclick="currentSlide(2, 3)"></span>
+			<span class="dot" onclick="currentSlide(3, 3)"></span>
+			<span class="dot" onclick="currentSlide(4, 3)"></span>
+			<span class="dot" onclick="currentSlide(5, 3)"></span>
 		</div>
-
-		<div class="mySlides3 fade" style="display: none">
-			<div class="numbertext">3 / 5</div>
-			<img src="src/images/LiuLab/YOLO_PLAN.png" style="width:100%"
-				 alt="Sample of RGB and Depth image, and image segmentation using YOLO">
-			<div class="text">Sample of RGB and Depth image</div>
-		</div>
-
-		<div class="mySlides3 fade" style="display: none">
-			<div class="numbertext">4 / 5</div>
-			<img src="src/images/LiuLab/mask4.png" style="width:100%"
-				 alt="Sample of YOLO algorithm for image segmentation">
-			<div class="text">Sample of YOLO algorithm for item segmentation</div>
-		</div>
-
-		<div class="mySlides3 fade" style="display: none">
-			<div class="numbertext">5 / 5</div>
-			<img src="src/images/LiuLab/CNN_Structure.jpg" style="width:100%"
-				 alt="Architecture of 3D CNN">
-			<div class="text">Architecture of 3D-CNN</div>
-		</div>
-
-		<!-- Next and previous buttons -->
-		<a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
-	</div>
-
-	<br>
-
-	<!-- The dots/circles -->
-	<div style="text-align:center">
-		<span class="dot" onclick="currentSlide(1, 3)"></span>
-		<span class="dot" onclick="currentSlide(2, 3)"></span>
-		<span class="dot" onclick="currentSlide(3, 3)"></span>
-		<span class="dot" onclick="currentSlide(4, 3)"></span>
-		<span class="dot" onclick="currentSlide(5, 3)"></span>
 	</div>
 
 	<h2>Binary Bot 2.0</h2>
@@ -226,6 +229,9 @@
 		</iframe>
 	</div>
 </div>
+
 <script src="src/js/slide_control.js"></script>
+<script src="https://kit.fontawesome.com/fe56654e7e.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

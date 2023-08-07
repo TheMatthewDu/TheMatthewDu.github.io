@@ -2,72 +2,326 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/dropdown.css">
+    <link rel="stylesheet" href="src/css/collapsible.css">
     <link rel="stylesheet" href="src/css/side_by_side.css">
     <title>Matthew Du Portfolio Website</title>
     <style>
         img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             width: 100%;
+        }
+
+        .stats_bar {
+            border: 1px solid white;
+            width: 30%;
+            vertical-align: top;
         }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <img src="src/images/LogoDisplay.png" class="logo_img split" alt="Logo">
+        <a href="#" class="split"> Matthew Du</a>
         <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="My_work.html"><i class="fa fa-fw fa-cogs"></i> My Work</a>
+        <a href="MyWork.html"><i class="fa fa-fw fa-cogs"></i> My Work</a>
         <a href="CV.html" class="active"><i class="fa fa-fw fa-briefcase"></i> CV</a>
-        <a href="Research.html"><i class="fa fa-fw fa-graduation-cap"></i> Research</a>
     </div>
-    <div class="column">
+    <div class="column col_left">
         <img src="src/images/profile_t.png" alt="Profile Picture of Matthew Du">
+
     </div>
-    <div class="column">
+    <div class="column col_right">
         <h1> Matthew Du</h1>
         <hr>
         <p>
-            <a class="fa fa-fw fa-envelope" href="mailto:matthew.du@mail.utoronto.ca"></a>
-            <a class="fa fa-fw fa-github" href="https://github.com/TheMatthewDu"></a>
-            <a class="fa fa-fw fa-linkedin" href="https://www.linkedin.com/in/thematthewdu/"></a>
+            <a class="fa-brands fa-github" href="https://github.com/TheMatthewDu"></a>
+            <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/thematthewdu/"></a>
         </p>
         <p>
-            I am currently a second-year <a href="https://www.mie.utoronto.ca/">
-            Mechanical Engineering</a> student studying at the
-            University of Toronto with way too many minors, but most notably, a <b> minor in <a href="https://web.cs.toronto.edu/">Computer Science</a></b> (the one offered by the Faculty of Arts and Science at the University of Toronto).
+            I am currently a second-year <b><a href="https://www.mie.utoronto.ca/">
+            Mechanical Engineering</a></b> student studying at the
+            University of Toronto pursuing many minors, but most notably, a minor in <b><a href="https://web.cs.toronto.edu/">Computer Science</a></b> (the one offered by the Faculty of Arts and Science at the University of Toronto).
         </p>
 
-        <p>
-            I am interested in a wide variety of subjects, with particular focus in,
-        </p>
-        <ul>
-            <li>Robotics and Mechatronics</li>
-            <li>Machine Learning</li>
-            <li>Computer Vision &amp; graphics</li>
-            <li>Assistive and Personal Devices</li>
-        </ul>
+        <h2><i class="fa fa-trophy"> </i> Stats</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="stats_bar" style="background-color: #002244">
+                        <h3 style="text-align: center">Interests</h3>
+                        <ul>
+                            <li>Building and designing visual &amp; wearable systems</li>
+                            <li>Designing 2D &amp; 3D computer vision algorithms for robotics &amp; other applications</li>
+                        </ul>
+                    </td>
+                    <td class="stats_bar" style="background-color: #004466">
+                        <h3 style="text-align: center">Skills</h3>
+                        <table style="padding: 10px; width: 100%">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 65%">
+                                        <i class="fa-brands fa-python"></i> Python
+                                    </td>
+                                    <td style="width: 35%">
+                                        4+ yrs
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-brands fa-cuttlefish"></i> C / C++
+                                    </td>
+                                    <td>
+                                        2+ yrs
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-tools"></i> Solidworks
+                                    </td>
+                                    <td>
+                                        1+ yrs
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">
+                                        <i class="fa-solid fa-robot"></i> ROS
+                                    </td>
+                                    <td>
+                                        1+ yrs
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-        <p>
-            I am also the co-president and co-founder of the newly revived
-            Student Branch of the Canadian Society of Mechanical Engineers
-            (CSME) at the University of Toronto. It is a professional
-            development organization designed to help bridge the gap between
-            academia and industry for mechanical engineering students at the
-            University of Toronto. Since it is relatively new, we are still
-            setting things up and building our network. If you are an
-            organization that would like to partner with us in hosting events
-            to gain access to talented mechanical engineering students at the University of Toronto,
-            feel free to email me at <a href="mailto:matthew.du@mail.utoronto.ca">matthew.du@mail.utoronto.ca</a>.
-        </p>
+                    </td>
+                    <td class="stats_bar" style="background-color: #006688">
+                        <h3 style="text-align: center">EXPERIENCES</h3>
+                        <ul style="list-style: '&#x1F5F9;'">
+                            <li style="padding-left: 10px">Proven record of leadership &amp; advocacy</li>
+                            <li style="padding-left: 10px">Sound ethical judgement &amp; diligence</li>
+                            <li style="padding-left: 10px">Strong communicator &amp; presenter</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-        <p class="bottom-three">
-            Outside school, I am an avid musical performer and
-            arranger/composer with various musical groups in the Greater
-            Toronto Area. My primary instrument is the Violin, but I am
-            also proficient in numerous other instruments, such as Viola,
-            Clarinet, Bass Clarinet, and Saxophone, to name a few.
-        </p>
+        <h2><i class="fa fa-fw fa-university"></i> Education</h2>
+        <table style="width: 75%">
+            <tbody>
+            <tr>
+                <td style="float: left"><b>BASc - <a
+                        href="https://engineering.calendar.utoronto.ca/section/Mechanical-and-Industrial-Engineering">Mechanical Engineering</a></b> <br>
+                    <i><a href="https://www.utoronto.ca/">University of Toronto</a></i>
+                </td>
+                <td style="float: right">
+                    Sept 21 - Present
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Planned minors in:
+                    <ul>
+                        <li>
+                            <a href="https://artsci.calendar.utoronto.ca/section/Computer-Science">Computer Science</a>
+                        </li>
+                        <li>
+                            <a href="https://engineering.calendar.utoronto.ca/minor-robotics-and-mechatronics-aeminram">Robotics and Mechatronics</a>
+                        </li>
+                        <li>
+                            <a href="https://engineering.calendar.utoronto.ca/minor-engineering-business-aeminbus">Engineering Business</a>
+                        </li>
+                        <li>
+                            <a href="https://engineering.calendar.utoronto.ca/minor-bioengineering-aeminbio">Bioengineering</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <button type="button" class="collapsible"><i class="fa fa-caret-right" aria-hidden="true"> </i> <i> Courses Taken</i></button>
+        <div class="collapsible_content">
+            <p>
+                <i>Mechanical Engineering (BASc) - Year 2</i>
+            </p>
+            <table>
+                <tbody>
+                <tr>
+                    <th style="width: 7.5%"></th>
+                    <th style="width: 37.5%"> Fall </th>
+
+                    <th style="width: 7.5%"></th>
+                    <th style="width: 37.5%"> Winter </th>
+                </tr>
+                <tr>
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie230h1">MIE230H1</a></td>
+                    <td> Engineering Analysis </td>
+
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/mat234h1">MAT234H1</a></td>
+                    <td> Differential Equations </td>
+                </tr>
+                <tr>
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie231h1">MIE231H1</a></td>
+                    <td>Probability and Statistics with Engineering Applications</td>
+
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie210h1">MIE210H1</a></td>
+                    <td> Thermodynamics </td>
+                </tr>
+                <tr>
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie243h1">MIE243H1</a></td>
+                    <td>Mechanical Engineering Design</td>
+
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie221h1">MIE221H1</a></td>
+                    <td> Manufacturing Engineering </td>
+                </tr>
+                <tr>
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie270h1">MIE270H1</a></td>
+                    <td>Materials Science</td>
+
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie222h1">MIE222H1</a></td>
+                    <td> Mechanics of Solids I </td>
+                </tr>
+                <tr>
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/jre420h1">JRE420H1</a></td>
+                    <td>People Management and Organizational Behaviour</td>
+
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc311h1">CSC311H1</a></td>
+                    <td> Introduction to Machine Learning </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <p><i>Industrial Engineering (BASc) - Year 1</i></p>
+            <table>
+                <tbody>
+                <tr>
+                    <th style="width: 7.5%"></th>
+                    <th style="width: 37.5%"> Fall </th>
+
+                    <th style="width: 7.5%"></th>
+                    <th style="width: 37.5%"> Winter </th>
+                </tr>
+                <tr>
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/aps100h1">APS100H1</a></td>
+                    <td> Orientation to Engineering </td>
+
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/aps112h1"> APS112H1</a></td>
+                    <td> Engineering Strategies and Practices II </td>
+                </tr>
+                <tr>
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/aps110h1">APS110H1</a></td>
+                    <td> Engineering Chemistry &amp; Materials Science </td>
+
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc209h1">CSC209H1</a></td>
+                    <td> Software Tools &amp; Systems Programming</td>
+                </tr>
+                <tr>
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/aps111h1">APS111H1</a></td>
+                    <td> Engineering Strategies and Practice I </td>
+
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/ece110h1">ECE110H1</a></td>
+                    <td> Electrical Fundamentals </td>
+                </tr>
+                <tr>
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/civ100h1">CIV100H1</a></td>
+                    <td> Mechanics </td>
+
+                    <td><a href="https://music.calendar.utoronto.ca/course/hmu111h1">HMU111H1</a></td>
+                    <td> Introduction to Music &amp; Society </td>
+                </tr>
+                <tr>
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc207h1">CSC207H1</a></td>
+                    <td> Software Design </td>
+
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie191h1">MIE191H1</a></td>
+                    <td> Introduction to Mechanical &amp; Industrial Engineering </td>
+                </tr>
+                <tr>
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc236h1">CSC236H1</a></td>
+                    <td> Introduction to the Theory of Computation </td>
+
+                    <td><a href="https://engineering.calendar.utoronto.ca/course/tep343h1">TEP343H1</a></td>
+                    <td> Engineering Leadership </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br><br>
+
+        <table style="width: 75%">
+            <tbody>
+            <tr>
+                <td style="float: left"><b> BSc - Physical and Mathematical Science</b> <br>
+                    <i><a href="https://www.utoronto.ca/">University of Toronto</a></i>
+                </td>
+                <td style="float: right">
+                    Sept '20 - Sept '21
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <button type="button" class="collapsible"><i class="fa fa-caret-right" aria-hidden="true"> </i> <i> Courses Taken</i></button>
+        <div class="collapsible_content">
+            <table>
+                <tbody>
+                <tr>
+                    <th style="width: 7.5%"></th>
+                    <th style="width: 37.5%"> Fall </th>
+
+                    <th style="width: 7.5%"></th>
+                    <th style="width: 37.5%"> Winter </th>
+                </tr>
+                <tr>
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc108h1"> CSC108H1</a></td>
+                    <td> Introduction to Computer Programming </td>
+
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/chm135h1">CHM135H1</a></td>
+                    <td>Chemistry: Physical Principles</td>
+                </tr>
+                <tr>
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/eco101h1">ECO101H1</a></td>
+                    <td> Principles of Microeconomics </td>
+
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc148h1">CSC148H1</a></td>
+                    <td> Introduction to Computer Science </td>
+                </tr>
+                <tr>
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/mat223h1">MAT223H1</a></td>
+                    <td>Linear Algebra I</td>
+
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc165h1">CSC165H1</a></td>
+                    <td> Mathematical Expression &amp; Reasoning for Computer Science</td>
+                </tr>
+                <tr>
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/mat137y1">MAT137Y1</a></td>
+                    <td>Calculus with Proofs</td>
+
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/mat137y1">MAT137Y1</a></td>
+                    <td>Calculus with Proofs</td>
+                </tr>
+                <tr>
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/phy151h1">PHY151H1</a></td>
+                    <td>Foundations of Physics I</td>
+
+                    <td><a href="https://artsci.calendar.utoronto.ca/course/phy152h1">PHY152H1</a></td>
+                    <td>Foundations of Physics II</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+
+    <p><i>Last Updated: 03-06-2023 20:09:00 EST</i></p>
+
+    <script src="https://kit.fontawesome.com/fe56654e7e.js" crossorigin="anonymous"></script>
+    <script src="src/js/collapsible.js"></script>
 </body>
 </html>

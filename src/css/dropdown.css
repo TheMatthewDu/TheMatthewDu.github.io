@@ -7,41 +7,38 @@
 .navbar a {
     float: right;
     padding: 12px;
-    color: #000000;
+    color: inherit;
     text-decoration: none;
     font-size: 17px;
 }
 
 .navbar a:hover {
-    background-color: #CCCCCC;
+    background-color: #666666;
 }
 
 .active {
     background-color: #555555;
 }
 
-.navbar h1.split {
+.navbar a.split {
+    padding-right: 48px;
+    padding-left: 48px;
     float: left;
     text-align: center;
-    background-color: #DADADA;
-    color: black;
-}
-
-.navbar .logo_img {
-    width: 18%;
+    font-weight: bolder;
+    font-size: 30px;
 }
 
 @media screen and (max-width: 900px) {
     .navbar h1.split {
-        float: none;
+        float: left;
+        display: block;
+        width: 100%;
     }
 
     .navbar a {
-        float: none;
+        float: left;
         display: block;
-    }
-
-    .navbar .logo_img {
-        float: none;
+        width: 100%;
     }
 }

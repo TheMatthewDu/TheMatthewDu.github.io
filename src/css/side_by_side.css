@@ -4,8 +4,15 @@ td {
 
 .column {
     float: left;
-    width: 50%;
     padding-bottom: 10px;
+}
+
+.col_left {
+    width: 40%;
+}
+
+.col_right {
+    width: 60%;
 }
 
 @media screen and (max-width: 900px){

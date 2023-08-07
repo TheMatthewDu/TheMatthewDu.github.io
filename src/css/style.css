@@ -1,7 +1,7 @@
-html, body {
-    background-color: #FFFFFF;
-    color: #000000;
-    font-family: Arial, sans-serif;
+html {
+    background: #000000 linear-gradient(to top, #000000 0%, #000F0F 50%, #005F80 100%) no-repeat;
+    color: #FFFFFF;
+    font-family: Courier New, serif;
     padding-left: 12px;
 }
 
@@ -23,7 +23,6 @@ a:visited {
 
 a:hover {
     color: #00AAFF;
-    /*font-weight: bold;*/
     text-decoration: underline;
     background-color: transparent;
 }
@@ -47,6 +46,10 @@ iframe{
     height: 100%;
 }
 
+button {
+    font-family: inherit;
+}
+
 @media screen and (max-width: 900px) {
     .adjust_media {
         width: 100%;
@@ -64,6 +67,6 @@ hr {
     width: 20%;
     height: 5px;
     border-width: 0;
-    background-color: #00A4BD;
+    background-color: #FF9F55;
 }
 
