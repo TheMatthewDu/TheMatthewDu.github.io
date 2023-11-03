@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {
+            font-family: Candara, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="w3-light-gray">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-large">
+    <div class="w3-bar w3-light-gray w3-card" id="myNavbar">
+        <div class="w3-bar-item w3-button w3-wide" style="font-weight: bolder">
+            Matthew Du
+        </div>
+
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-certificate"></i> EDUCATION</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-regular fa-calendar-days"></i> SUPPORT US</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">EDUCATION</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCE</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px; padding-top: 32px">
+    <div class="w3-row-padding">
+        <div class="w3-container w3-card w3-white w3-margin-bottom" id="about">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Courses Taken</h2>
+            <div class="w3-container" style="padding-bottom: 64px">
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/aps100h1">APS100H1</a></td>
+                        <td> Orientation to Engineering </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/aps110h1">APS110H1</a></td>
+                        <td> Engineering Chemistry &amp; Materials Science </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/aps111h1">APS111H1</a></td>
+                        <td> Engineering Strategies and Practice I </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/aps112h1"> APS112H1</a></td>
+                        <td> Engineering Strategies and Practices II </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/chm135h1">CHM135H1</a></td>
+                        <td>Chemistry: Physical Principles</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/civ100h1">CIV100H1</a></td>
+                        <td> Mechanics </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/csc108h1"> CSC108H1</a></td>
+                        <td> Introduction to Computer Programming </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/csc148h1">CSC148H1</a></td>
+                        <td> Introduction to Computer Science </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/csc165h1">CSC165H1</a></td>
+                        <td> Mathematical Expression &amp; Reasoning for Computer Science</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/csc207h1">CSC207H1</a></td>
+                        <td> Software Design </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/csc209h1">CSC209H1</a></td>
+                        <td> Software Tools &amp; Systems Programming</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/csc236h1">CSC236H1</a></td>
+                        <td> Introduction to the Theory of Computation </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/csc311h1">CSC311H1</a></td>
+                        <td> Introduction to Machine Learning </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/ece110h1">ECE110H1</a></td>
+                        <td> Electrical Fundamentals </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/eco101h1">ECO101H1</a></td>
+                        <td> Principles of Microeconomics </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://music.calendar.utoronto.ca/course/hmu111h1">HMU111H1</a></td>
+                        <td> Introduction to Music &amp; Society </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/jre420h1">JRE420H1</a></td>
+                        <td> People Management and Organizational Behaviour </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/mat137y1">MAT137Y1</a></td>
+                        <td>Calculus with Proofs</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/mat223h1">MAT223H1</a></td>
+                        <td>Linear Algebra I</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/mat234h1">MAT234H1</a></td>
+                        <td> Differential Equations </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/mie191h1">MIE191H1</a></td>
+                        <td> Introduction to Mechanical &amp; Industrial Engineering </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/mie210h1">MIE210H1</a></td>
+                        <td> Thermodynamics </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/mie221h1">MIE221H1</a></td>
+                        <td> Manufacturing Engineering </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/mie222h1">MIE222H1</a></td>
+                        <td> Mechanics of Solids I </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/mie230h1">MIE230H1</a></td>
+                        <td> Engineering Analysis </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/mie231h1">MIE231H1</a></td>
+                        <td> Probability and Statistics with Engineering Applications< /td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/mie243h1">MIE243H1</a></td>
+                        <td> Mechanical Engineering Design </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/mie270h1">MIE270H1</a></td>
+                        <td>Materials Science </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://engineering.calendar.utoronto.ca/course/tep343h1">TEP343H1</a></td>
+                        <td> Engineering Leadership </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/phy151h1">PHY151H1</a></td>
+                        <td>Foundations of Physics I</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://artsci.calendar.utoronto.ca/course/phy152h1">PHY152H1</a></td>
+                        <td>Foundations of Physics II</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- End Grid -->
+    </div>
+
+    <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-blue w3-center w3-margin-top">
+    <br>
+    <a href="#" class="w3-button w3-red" style="border-radius: 25px; outline: #FFFFFF solid 2px">
+        <i class="fa fa-arrow-up w3-margin-right"></i>To the top
+    </a>
+    <p>Find me on social media.</p>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p>Poweblue by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script src="https://kit.fontawesome.com/fe56654e7e.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

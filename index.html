@@ -1,327 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>W3.CSS Template</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/dropdown.css">
-    <link rel="stylesheet" href="src/css/collapsible.css">
-    <link rel="stylesheet" href="src/css/side_by_side.css">
-    <title>Matthew Du Portfolio Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
+        html, body, h1, h2, h3,h4,h5,h6 {
+            font-family: Candara, sans-serif;
         }
 
-        .stats_bar {
-            border: 1px solid white;
+        .w3-container {
+            padding-top: 8px;
+        }
+
+        .gallery_logo {
+            outline: #777777 1px solid;
+            box-shadow: 3px 5px #2196F3;
+            white-space: normal;
+            height: 100%;
+            min-height: 250px;
+            margin: 2px;
             width: 30%;
-            vertical-align: top;
+        }
+
+        .gallery_img {
+            width: 100%;
+            padding-top: 4px;
+        }
+
+        .w3-dark-blue {
+            color:#fff!important;
+            background-color:#202052!important
+        }
+
+        .w3-button:hover{
+            color:#FFFFFF!important;
+            background-color:#5220B2!important
         }
     </style>
 </head>
-<body>
-    <div class="navbar">
-        <a href="#" class="split"> Matthew Du</a>
-        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="MyWork.html"><i class="fa fa-fw fa-cogs"></i> My Work</a>
-        <a href="CV.html" class="active"><i class="fa fa-fw fa-briefcase"></i> CV</a>
-    </div>
-    <div class="column col_left">
-        <img src="src/images/profile_t.png" alt="Profile Picture of Matthew Du">
 
-    </div>
-    <div class="column col_right">
-        <h1> Matthew Du</h1>
-        <hr>
-        <p>
-            <a class="fa-brands fa-github" href="https://github.com/TheMatthewDu"></a>
-            <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/thematthewdu/"></a>
-        </p>
-        <p>
-            I am currently a second-year <b><a href="https://www.mie.utoronto.ca/">
-            Mechanical Engineering</a></b> student studying at the
-            University of Toronto pursuing many minors, but most notably, a minor in <b><a href="https://web.cs.toronto.edu/">Computer Science</a></b> (the one offered by the Faculty of Arts and Science at the University of Toronto).
-        </p>
+<body class="w3-black">
 
-        <h2><i class="fa fa-trophy"> </i> Stats</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <td class="stats_bar" style="background-color: #002244">
-                        <h3 style="text-align: center">Interests</h3>
-                        <ul>
-                            <li>Building and designing visual &amp; wearable systems</li>
-                            <li>Designing 2D &amp; 3D computer vision algorithms for robotics &amp; other applications</li>
-                        </ul>
-                    </td>
-                    <td class="stats_bar" style="background-color: #004466">
-                        <h3 style="text-align: center">Skills</h3>
-                        <table style="padding: 10px; width: 100%">
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-large">
+    <div class="w3-bar w3-black w3-card" id="myNavbar">
+        <div class="w3-bar-item w3-button w3-wide" style="font-weight: bolder">
+            Matthew Du
+        </div>
+
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#education" class="w3-bar-item w3-button"><i class="fa fa-certificate"></i> EDUCATION</a>
+            <a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-regular fa-calendar-days"></i> PROJECTS</a>
+            <a href="#activities" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> EXPERIENCE</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-dark-blue w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button">EDUCATION</a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCE</a>
+    <a href="#activities" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1600px; padding-top: 48px">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+
+        <!-- Left Column -->
+        <div class="w3-third">
+
+            <div class="w3-dark-blue w3-card-4">
+                <div class="w3-display-container">
+                    <img src="img/profile_image.png" style="width:100%" alt="Avatar">
+                </div>
+
+                <div class="w3-container" style="padding-bottom: 32px" >
+                    <h2 style="font-weight: bolder; font-size: 36px">Matthew Du</h2>
+
+                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Mechanical Engineering &amp; Computer Science</p>
+                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>University of Toronto, Toronto, ON, Canada</p>
+                    <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-blue"></i>TheMatthewDu</p>
+                    <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-blue"></i>theMatthewDu</p>
+                    <hr>
+
+                    <h2 class="w3-text-light-grey" id="education"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Education</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b><a href="https://www.utoronto.ca/" style="text-decoration:none">University of Toronto</a></b></h5>
+                        <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept '21 - Present</h6>
+                        <p>Bachelors in Applied Science in <a href="https://engineering.calendar.utoronto.ca/section/Mechanical-and-Industrial-Engineering">Mechanical Engineering</a></p>
+                        Planned minors in <a href="https://artsci.calendar.utoronto.ca/section/Computer-Science">Computer Science</a>,
+                        <a href="https://engineering.calendar.utoronto.ca/minor-robotics-and-mechatronics-aeminram">Robotics and Mechatronics</a>,
+                        <a href="https://engineering.calendar.utoronto.ca/minor-engineering-business-aeminbus">Engineering Business</a>
+                        <br><br>
+                        <button onclick="document.getElementById('courses').style.display='block'" class="w3-button" style="border: white solid">
+                            List of all courses taken
+                        </button>
+                        <div id="courses" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container w3-dark-blue" style="padding-bottom: 32px">
+                                    <h3 class="w3-text-light-grey"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Courses Taken</h3>
+                                    <span onclick="document.getElementById('courses').style.display='none'" class="w3-button w3-display-topright"><i class="fa-solid fa-x"></i></span>
+
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <th>Course Code</th>
+                                            <th>Course Name</th>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/aps100h1">APS100H1</a></td>
+                                            <td> Orientation to Engineering </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/aps110h1">APS110H1</a></td>
+                                            <td> Engineering Chemistry &amp; Materials Science </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/aps111h1">APS111H1</a></td>
+                                            <td> Engineering Strategies and Practice I </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/aps112h1"> APS112H1</a></td>
+                                            <td> Engineering Strategies and Practices II </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/chm135h1">CHM135H1</a></td>
+                                            <td>Chemistry: Physical Principles</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/civ100h1">CIV100H1</a></td>
+                                            <td> Mechanics </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/csc108h1"> CSC108H1</a></td>
+                                            <td> Introduction to Computer Programming </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/csc148h1">CSC148H1</a></td>
+                                            <td> Introduction to Computer Science </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/csc165h1">CSC165H1</a></td>
+                                            <td> Mathematical Expression &amp; Reasoning for Computer Science</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/csc207h1">CSC207H1</a></td>
+                                            <td> Software Design </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/csc209h1">CSC209H1</a></td>
+                                            <td> Software Tools &amp; Systems Programming</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/csc236h1">CSC236H1</a></td>
+                                            <td> Introduction to the Theory of Computation </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/csc311h1">CSC311H1</a></td>
+                                            <td> Introduction to Machine Learning </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/ece110h1">ECE110H1</a></td>
+                                            <td> Electrical Fundamentals </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/eco101h1">ECO101H1</a></td>
+                                            <td> Principles of Microeconomics </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://music.calendar.utoronto.ca/course/hmu111h1">HMU111H1</a></td>
+                                            <td> Introduction to Music &amp; Society </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/jre420h1">JRE420H1</a></td>
+                                            <td> People Management and Organizational Behaviour </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/mat137y1">MAT137Y1</a></td>
+                                            <td>Calculus with Proofs</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/mat223h1">MAT223H1</a></td>
+                                            <td>Linear Algebra I</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/mat234h1">MAT234H1</a></td>
+                                            <td> Differential Equations </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/mie191h1">MIE191H1</a></td>
+                                            <td> Introduction to Mechanical &amp; Industrial Engineering </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/mie210h1">MIE210H1</a></td>
+                                            <td> Thermodynamics </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/mie221h1">MIE221H1</a></td>
+                                            <td> Manufacturing Engineering </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/mie222h1">MIE222H1</a></td>
+                                            <td> Mechanics of Solids I </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/mie230h1">MIE230H1</a></td>
+                                            <td> Engineering Analysis </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/mie231h1">MIE231H1</a></td>
+                                            <td> Probability and Statistics with Engineering Applications< /td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/mie243h1">MIE243H1</a></td>
+                                            <td> Mechanical Engineering Design </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/mie270h1">MIE270H1</a></td>
+                                            <td>Materials Science </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://engineering.calendar.utoronto.ca/course/tep343h1">TEP343H1</a></td>
+                                            <td> Engineering Leadership </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/phy151h1">PHY151H1</a></td>
+                                            <td>Foundations of Physics I</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://artsci.calendar.utoronto.ca/course/phy152h1">PHY152H1</a></td>
+                                            <td>Foundations of Physics II</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+                    </div>
+
+                    <h2 class="w3-text-light-grey"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Certifications</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b><a href="https://www.utoronto.ca/" style="text-decoration:none">Royal Conservatory of Music</a></b></h5>
+                        <table>
                             <tbody>
                                 <tr>
-                                    <td style="width: 65%">
-                                        <i class="fa-brands fa-python"></i> Python
-                                    </td>
-                                    <td style="width: 35%">
-                                        4+ yrs
-                                    </td>
+                                    <td>Level 10 Violin</td>
+                                    <td><i class="fa fa-calendar fa-fw w3-margin-left"></i> June 2019</td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <i class="fa-brands fa-cuttlefish"></i> C / C++
-                                    </td>
-                                    <td>
-                                        2+ yrs
-                                    </td>
+                                    <td>Level 8 Clarinet</td>
+                                    <td><i class="fa fa-calendar fa-fw w3-margin-left"></i> Aug 2019</td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <i class="fa-solid fa-tools"></i> Solidworks
-                                    </td>
-                                    <td>
-                                        1+ yrs
-                                    </td>
+                                    <td>Level 10 Harmony &amp; Counterpoint</td>
+                                    <td><i class="fa fa-calendar fa-fw w3-margin-left"></i> Aug 2020</td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: left">
-                                        <i class="fa-solid fa-robot"></i> ROS
-                                    </td>
-                                    <td>
-                                        1+ yrs
-                                    </td>
+                                    <td>Level 10 History</td>
+                                    <td><i class="fa fa-calendar fa-fw w3-margin-left"></i> Aug 2020</td>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
 
-                    </td>
-                    <td class="stats_bar" style="background-color: #006688">
-                        <h3 style="text-align: center">EXPERIENCES</h3>
-                        <ul style="list-style: '&#x1F5F9;'">
-                            <li style="padding-left: 10px">Proven record of leadership &amp; advocacy</li>
-                            <li style="padding-left: 10px">Sound ethical judgement &amp; diligence</li>
-                            <li style="padding-left: 10px">Strong communicator &amp; presenter</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<!--                    <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue"></i>Skills</b></p>-->
+<!--                    <p>Adobe Photoshop</p>-->
+<!--                    <div class="w3-black w3-round-xlarge w3-small">-->
+<!--                        <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:90%">90%</div>-->
+<!--                    </div>-->
+<!--                    <p>Photography</p>-->
+<!--                    <div class="w3-black w3-round-xlarge w3-small">-->
+<!--                        <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:80%">-->
+<!--                            <div class="w3-center w3-text-white">80%</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <p>Illustrator</p>-->
+<!--                    <div class="w3-black w3-round-xlarge w3-small">-->
+<!--                        <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:75%">75%</div>-->
+<!--                    </div>-->
+<!--                    <p>Media</p>-->
+<!--                    <div class="w3-black w3-round-xlarge w3-small">-->
+<!--                        <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:50%">50%</div>-->
+<!--                    </div>-->
+<!--                    <br>-->
 
-        <h2><i class="fa fa-fw fa-university"></i> Education</h2>
-        <table style="width: 75%">
-            <tbody>
-            <tr>
-                <td style="float: left"><b>BASc - <a
-                        href="https://engineering.calendar.utoronto.ca/section/Mechanical-and-Industrial-Engineering">Mechanical Engineering</a></b> <br>
-                    <i><a href="https://www.utoronto.ca/">University of Toronto</a></i>
-                </td>
-                <td style="float: right">
-                    Sept 21 - Present
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Planned minors in:
+                </div>
+            </div>
+
+            <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+
+            <div class="w3-container w3-card w3-dark-blue w3-margin-bottom" id="about">
+                <h2 class="w3-text-light-grey"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>About Me</h2>
+                <div class="w3-container">
+                    <p>
+                        I am currently a third-year <a href="https://www.mie.utoronto.ca/"> Mechanical Engineering</a>
+                        student studying at the University of Toronto pursuing many minors, but most notably, a minor
+                        in <a href="https://web.cs.toronto.edu/">Computer Science</a> (the one offered by the Faculty
+                        of Arts and Science). Broadly speaking, I am interested in anything related computer vision and
+                        graphics, such as 2D and 3D geometry processing, physics/engineering based simulations, robotic
+                        vision, and wearable technology.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-container w3-card w3-dark-blue w3-margin-bottom" style="padding-bottom: 32px" id="projects">
+                <h2 class="w3-text-light-grey">
+                    <i class="fa fa-th fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> Notable Projects
+                </h2>
+
+                <div class="w3-container">
+                    <h3 class="w3-text-light-grey"><i class="fa fa-tools fa-fw w3-margin-right w3-xlarge w3-text-blue"></i>Mechanical Engineering</h3>
+
+                    <button onclick="document.getElementById('gallery_1').style.display='block'"
+                            class="w3-third w3-lighter-dark-blue w3-button gallery_logo">
+                        <img src="src/images/gearbox/Gearbox_pic_1.jpg" class="gallery_img" alt="3D Printed Gearbox">
+                        <br>
+                        3D Printed Gearbox
+                    </button>
+                    <div id="gallery_1" class="w3-modal">
+                        <div class="w3-modal-content w3-container w3-dark-blue">
+                            <span onclick="document.getElementById('gallery_1').style.display='none'" class="w3-button w3-display-topright"><i class="fa-solid fa-x"></i></span>
+                            <h3>3D Printed Gearbox</h3>
+                            <p>
+                                This is a design and 3D printing for a gearbox. The design utilizes a 3:1 gear reduction
+                                ratio, where the input and output shafts are offset by 90 degrees and are not collinear.
+                                The design features 2 spur gears to achieve the gear ratio, and two bevel gears at a
+                                ratio of 1:1 to achieve the 90 degrees offset.
+                            </p>
+
+                            <img src="src/images/gearbox/Gearbox_pic_1.jpg" style="width:50%; float: left"
+                                 alt="Sample of Pick and Placing application">
+                            <img src="src/images/gearbox/Gearbox_pic_2.jpg" style="width:50%; float: left"
+                                 alt="Sample of Robotic Grasping">
+                            <img src="src/images/gearbox/Gearbox_pic_3.jpg" style="width:50%; float: left"
+                                 alt="Sample of RGB and Depth image, and image segmentation using YOLO">
+                            <img src="src/images/gearbox/Gearbox_pic_4.jpg" style="width:50%; float: left"
+                                 alt="Sample of YOLO algorithm for image segmentation">
+                        </div>
+                    </div>
+
+<!--                    <button onclick="document.getElementById('gallery_2').style.display='block'"-->
+<!--                            class="w3-third w3-lighter-dark-blue w3-button gallery_logo">-->
+<!--                        <img src="img/work_in_progress.jpg" class="gallery_img" alt="Work in Progress Sign">-->
+<!--                        <br>-->
+<!--                        Wearable Camera-->
+<!--                    </button>-->
+<!--                    <div id="gallery_2" class="w3-modal">-->
+<!--                        <div class="w3-modal-content w3-container w3-dark-blue">-->
+<!--                            <span onclick="document.getElementById('gallery_2').style.display='none'"-->
+<!--                                  class="w3-button w3-display-topright"><i class="fa-solid fa-x"></i></span>-->
+<!--                            <h3>Wearable Camera</h3>-->
+<!--                            <p>-->
+<!--                                If you are seeing this, that means I am currently not done with this project yet! Sorry!-->
+<!--                                This is a Raspberry Pi powered wearable camera that I am working on, where there is a-->
+<!--                                near eye OLED display and a RGB (maybe even a depth camera, if I can get my hands on a-->
+<!--                                afforable one) camera module. I have currently designed -->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+
+                <div class="w3-container">
+                    <h3 class="w3-text-light-grey"><i class="fa fa-terminal fa-fw w3-margin-right w3-xlarge w3-text-blue"></i>Programming</h3>
+
+                    <button onclick="document.getElementById('gallery_3').style.display='block'"
+                            class="w3-third w3-lighter-dark-blue w3-button gallery_logo">
+                        <img src="img/south_korean_president_picture.png" class="gallery_img" alt="Picture of project presented to South Korean President">
+                        <br>
+                        Design and Testing of Vision Algorithms for an Interactive Soft Robotic Hand
+                    </button>
+                    <div id="gallery_3" class="w3-modal">
+                        <div class="w3-modal-content w3-container w3-dark-blue">
+                            <span onclick="document.getElementById('gallery_3').style.display='none'" class="w3-button w3-display-topright"><i class="fa-solid fa-x"></i></span>
+                            <h3>Design and Testing of Vision Algorithms for an Interactive Soft Robotic Hand</h3>
+                            <p>
+                                This is the summer research project that I was involved with in the summer of 2022 at
+                                the <a href="https://liulab.mie.utoronto.ca/"> Microfluidics and BioMEMS Lab (MBL)</a>
+                                at the University of Toronto in collaboration with Zhanfeng Zhou and under the
+                                supervision of Dr Xinyu Liu. I was worked on Computer Vision and image segmentation and
+                                smoothing algorithms for Soft Robotic Arm.
+
+                                <br><br>
+
+                                I presented my findings at the annual University of Toronto
+                                Undergraduate Engineering Research Day Conference (UnERD). The
+                                abstract for the submission can be found <a href="src/portfolio_files/Abstract%20Template.pdf">here</a> and my poster <a href="src/portfolio_files/poster.pdf">here</a>.
+
+                                <br><br>
+
+                                This project was also later presented in an Artificial Intelligence (AI)
+                                conference with the President Yoon Suk-yeol of the Republic of Korea
+                                at the University of Toronto in September 2022. More details regarding
+                                the conference can be found
+                                <a href="https://www.koreatimes.co.kr/www/nation/2022/09/356_336616.html">here</a>
+                            </p>
+
+                            <img src="img/south_korean_president_picture.png" class="gallery_img" alt="Picture of project presented to South Korean President">
+                            <img src="src/images/LiuLab/Vision_based_grasping3.png" style="width:50%; float: left"
+                                 alt="Sample of Pick and Placing application">
+                            <img src="src/images/LiuLab/Grasp_sample2.png" style="width:50%; float: left"
+                                 alt="Sample of Robotic Grasping">
+                            <img src="src/images/LiuLab/YOLO_PLAN.png" style="width:50%; float: left"
+                                 alt="Sample of RGB and Depth image, and image segmentation using YOLO">
+                            <img src="src/images/LiuLab/mask4.png" style="width:50%; float: left"
+                                 alt="Sample of YOLO algorithm for image segmentation">
+                            <img src="src/images/LiuLab/CNN_Structure.jpg" style="width:50%; float: left"
+                                 alt="Architecture of 3D CNN">
+                        </div>
+                    </div>
+
+                    <button onclick="document.getElementById('gallery_4').style.display='block'"
+                            class="w3-third w3-lighter-dark-blue w3-button gallery_logo">
+                        <img src="img/video_editor.png" class="gallery_img" alt="Video Recording Applet">
+                        <br>
+                        Video Recording Applet
+                    </button>
+                    <div id="gallery_4" class="w3-modal">
+                        <div class="w3-modal-content w3-container w3-dark-blue">
+                            <span onclick="document.getElementById('gallery_4').style.display='none'" class="w3-button w3-display-topright"><i class="fa-solid fa-x"></i></span>
+                            <h3>Video Recording App</h3>
+                            <p><a href="https://github.com/TheMatthewDu/ML_Video_App"><i class="fa fa-github"> </i> Source</a></p>
+                            <p>
+                                This is a relatively small video recording app I designed using OpenCV and PyTorch.
+                                I trained a custom YOLOv5 model for hand tracking, which allows me to code in objects
+                                to follow hand gestures. Additionally, I used a pretrained RESNET for background
+                                filtering to change a virtual background. Due to the slow speed of these models, it is
+                                multithreaded to reduce the latency in the program.
+                            </p>
+                            <img src="img/video_editor.png" alt="Video Recording Applet" style="width:50%; float: left">
+                        </div>
+                    </div>
+
+                    <button onclick="document.getElementById('gallery_5').style.display='block'"
+                            class="w3-third w3-lighter-dark-blue w3-button gallery_logo">
+                        <img src="img/timetable_app/add_course_page.png" class="gallery_img" alt="Main Screen of Timetable App">
+                        <br>
+                        Timetable Management App
+                    </button>
+                    <div id="gallery_5" class="w3-modal">
+                        <div class="w3-modal-content w3-container w3-dark-blue">
+                            <span onclick="document.getElementById('gallery_5').style.display='none'" class="w3-button w3-display-topright"><i class="fa-solid fa-x"></i></span>
+                            <h3>Timetable Management App</h3>
+                            <p><a href="https://github.com/matthewrhdu/sout-this_is_our_teamname-forked-CSC207H1-Project"><i class="fa fa-github"> </i> Source</a></p>
+                            <p>
+                                This is a program that was created as a part of the design project in the Fall 2021
+                                term of CSC207H1 at the University of Toronto St.George. It is a timetable planning
+                                tool, that gathers information from the (now deprecated) U of T Course Finder using the
+                                JSoup library.
+                            </p>
+
+                            <p>
+                                Some features include:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Students can search and add course or other tasks to their timetable,
+                                    which is displayed on the GUI developed using Java Swing.
+                                </li>
+                                <lI>
+                                    Students can load and unload to a serialized file with their courses using a custom
+                                    file extension
+                                </lI>
+                                <li>
+                                    Students can automatically schedule multiple courses into their timetable using a
+                                    Depth First Search Algorithm
+                                </li>
+                            </ul>
+
+                            <img src="img/timetable_app/main_screen.png" style="width:50%; float: left"
+                                 alt="Main Screen of Timetable app">
+                            <img src="img/timetable_app/add_course_page.png" style="width:50%; float: left"
+                                 alt="The schedule of time-table app">
+                            <img src="img/timetable_app/search_bar.png" style="width:50%; float: left"
+                                 alt="Search Bar of timetable app">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-container w3-card w3-dark-blue w3-margin-bottom" id="activities">
+                <h2 class="w3-text-light-grey"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Extracurricular Activities</h2>
+
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Third-Year Mechanical Engineering Class Representative</b></h5>
+                    <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2023 - <span class="w3-tag w3-blue w3-round">Current</span></h6>
+                    <p>Elected student representative of third-year Mechanical Engineering class. Responding to course-related and administrative issues and advocating for the interest of constituents.</p>
+
+                    <b>Accomplishments</b>
                     <ul>
-                        <li>
-                            <a href="https://artsci.calendar.utoronto.ca/section/Computer-Science">Computer Science</a>
-                        </li>
-                        <li>
-                            <a href="https://engineering.calendar.utoronto.ca/minor-robotics-and-mechatronics-aeminram">Robotics and Mechatronics</a>
-                        </li>
-                        <li>
-                            <a href="https://engineering.calendar.utoronto.ca/minor-engineering-business-aeminbus">Engineering Business</a>
-                        </li>
-                        <li>
-                            <a href="https://engineering.calendar.utoronto.ca/minor-bioengineering-aeminbio">Bioengineering</a>
-                        </li>
+                        <li>Established stable communication channel with the Engineering Career Center (ECC) to
+                            mutually work on improving the PEY experience for all Mechanical Engineering students</li>
+                        <li>Responded to numerous concerns with course scheduling, which were successfully resolved</li>
                     </ul>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+                    <hr>
+                </div>
 
-        <button type="button" class="collapsible"><i class="fa fa-caret-right" aria-hidden="true"> </i> <i> Courses Taken</i></button>
-        <div class="collapsible_content">
-            <p>
-                <i>Mechanical Engineering (BASc) - Year 2</i>
-            </p>
-            <table>
-                <tbody>
-                <tr>
-                    <th style="width: 7.5%"></th>
-                    <th style="width: 37.5%"> Fall </th>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Faculty Council Standing Committee Representative</b></h5>
+                    <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2022 - <span class="w3-tag w3-blue w3-round">Current</span></h6>
+                    <ul>
+                        <li>Undergraduate Academic Appeals Board (Sept 2022 - Present)</li>
+                        <li>Scholarships &amp; Awards Committee (July 2023 - Proxy)</li>
+                        <li>Inclusion, Diversity, and Equity Advisory (IDEA) Committee (Jan 2023 - Jun 2023)</li>
+                    </ul>
 
-                    <th style="width: 7.5%"></th>
-                    <th style="width: 37.5%"> Winter </th>
-                </tr>
-                <tr>
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie230h1">MIE230H1</a></td>
-                    <td> Engineering Analysis </td>
+                    <b>Accomplishments</b>
+                    <ul>
+                        <li>Addressed various accessibility concerns in the Faculty. Successfully connected Faculty
+                            Leadership with Accessibility Services &amp; Accommodated Testing Services to address
+                            various accessibility concerns</li>
+                        <li>Helped establish new exam types in the Faculty of Applied Science and Engineering to
+                            address accessibility concerns</li>
+                        <li>Introduced dialogue on scholarships and awards to ensure equitable distribution of awards</li>
+                    </ul>
+                    <hr>
+                </div>
 
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/mat234h1">MAT234H1</a></td>
-                    <td> Differential Equations </td>
-                </tr>
-                <tr>
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie231h1">MIE231H1</a></td>
-                    <td>Probability and Statistics with Engineering Applications</td>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Co-President &amp; Founding Member -- Canadian Society of Mechanical Engineers (CSME) Student Chapter</b></h5>
+                    <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2023 - <span class="w3-tag w3-blue w3-round">Current</span></h6>
+                    <ul>
+                        <li>Co-founded professional development organization for mechanical engineering students,
+                            aimed to help enhance students' career prospects. Led strategic decisions, including c
+                            composition and vision-mission-value formulation.</li>
+                        <li>Established strong relationship with the UofT MIE department, CSME leadership, Engineering
+                            Career Center, and other student chapters across Canada. Established the organization's IT
+                            infrastructure, such as website and email.</li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
 
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie210h1">MIE210H1</a></td>
-                    <td> Thermodynamics </td>
-                </tr>
-                <tr>
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie243h1">MIE243H1</a></td>
-                    <td>Mechanical Engineering Design</td>
-
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie221h1">MIE221H1</a></td>
-                    <td> Manufacturing Engineering </td>
-                </tr>
-                <tr>
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie270h1">MIE270H1</a></td>
-                    <td>Materials Science</td>
-
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie222h1">MIE222H1</a></td>
-                    <td> Mechanics of Solids I </td>
-                </tr>
-                <tr>
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/jre420h1">JRE420H1</a></td>
-                    <td>People Management and Organizational Behaviour</td>
-
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc311h1">CSC311H1</a></td>
-                    <td> Introduction to Machine Learning </td>
-                </tr>
-                </tbody>
-            </table>
-
-            <p><i>Industrial Engineering (BASc) - Year 1</i></p>
-            <table>
-                <tbody>
-                <tr>
-                    <th style="width: 7.5%"></th>
-                    <th style="width: 37.5%"> Fall </th>
-
-                    <th style="width: 7.5%"></th>
-                    <th style="width: 37.5%"> Winter </th>
-                </tr>
-                <tr>
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/aps100h1">APS100H1</a></td>
-                    <td> Orientation to Engineering </td>
-
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/aps112h1"> APS112H1</a></td>
-                    <td> Engineering Strategies and Practices II </td>
-                </tr>
-                <tr>
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/aps110h1">APS110H1</a></td>
-                    <td> Engineering Chemistry &amp; Materials Science </td>
-
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc209h1">CSC209H1</a></td>
-                    <td> Software Tools &amp; Systems Programming</td>
-                </tr>
-                <tr>
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/aps111h1">APS111H1</a></td>
-                    <td> Engineering Strategies and Practice I </td>
-
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/ece110h1">ECE110H1</a></td>
-                    <td> Electrical Fundamentals </td>
-                </tr>
-                <tr>
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/civ100h1">CIV100H1</a></td>
-                    <td> Mechanics </td>
-
-                    <td><a href="https://music.calendar.utoronto.ca/course/hmu111h1">HMU111H1</a></td>
-                    <td> Introduction to Music &amp; Society </td>
-                </tr>
-                <tr>
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc207h1">CSC207H1</a></td>
-                    <td> Software Design </td>
-
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/mie191h1">MIE191H1</a></td>
-                    <td> Introduction to Mechanical &amp; Industrial Engineering </td>
-                </tr>
-                <tr>
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc236h1">CSC236H1</a></td>
-                    <td> Introduction to the Theory of Computation </td>
-
-                    <td><a href="https://engineering.calendar.utoronto.ca/course/tep343h1">TEP343H1</a></td>
-                    <td> Engineering Leadership </td>
-                </tr>
-                </tbody>
-            </table>
+            <!-- End Right Column -->
         </div>
 
-        <br><br>
-
-        <table style="width: 75%">
-            <tbody>
-            <tr>
-                <td style="float: left"><b> BSc - Physical and Mathematical Science</b> <br>
-                    <i><a href="https://www.utoronto.ca/">University of Toronto</a></i>
-                </td>
-                <td style="float: right">
-                    Sept '20 - Sept '21
-                </td>
-            </tr>
-            </tbody>
-        </table>
-
-        <br>
-
-        <button type="button" class="collapsible"><i class="fa fa-caret-right" aria-hidden="true"> </i> <i> Courses Taken</i></button>
-        <div class="collapsible_content">
-            <table>
-                <tbody>
-                <tr>
-                    <th style="width: 7.5%"></th>
-                    <th style="width: 37.5%"> Fall </th>
-
-                    <th style="width: 7.5%"></th>
-                    <th style="width: 37.5%"> Winter </th>
-                </tr>
-                <tr>
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc108h1"> CSC108H1</a></td>
-                    <td> Introduction to Computer Programming </td>
-
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/chm135h1">CHM135H1</a></td>
-                    <td>Chemistry: Physical Principles</td>
-                </tr>
-                <tr>
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/eco101h1">ECO101H1</a></td>
-                    <td> Principles of Microeconomics </td>
-
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc148h1">CSC148H1</a></td>
-                    <td> Introduction to Computer Science </td>
-                </tr>
-                <tr>
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/mat223h1">MAT223H1</a></td>
-                    <td>Linear Algebra I</td>
-
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/csc165h1">CSC165H1</a></td>
-                    <td> Mathematical Expression &amp; Reasoning for Computer Science</td>
-                </tr>
-                <tr>
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/mat137y1">MAT137Y1</a></td>
-                    <td>Calculus with Proofs</td>
-
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/mat137y1">MAT137Y1</a></td>
-                    <td>Calculus with Proofs</td>
-                </tr>
-                <tr>
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/phy151h1">PHY151H1</a></td>
-                    <td>Foundations of Physics I</td>
-
-                    <td><a href="https://artsci.calendar.utoronto.ca/course/phy152h1">PHY152H1</a></td>
-                    <td>Foundations of Physics II</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+        <!-- End Grid -->
     </div>
 
-    <p><i>Last Updated: 03-06-2023 20:09:00 EST</i></p>
+    <!-- End Page Container -->
+</div>
 
-    <script src="https://kit.fontawesome.com/fe56654e7e.js" crossorigin="anonymous"></script>
-    <script src="src/js/collapsible.js"></script>
+<footer class="w3-container w3-dark-blue w3-center w3-margin-top">
+    <br>
+    <a href="#" class="w3-button w3-deep-purple" style="border-radius: 25px; outline: #FFFFFF solid 2px">
+        <i class="fa fa-arrow-up w3-margin-right"></i>To the top
+    </a>
+    <p>Poweblue by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script src="https://kit.fontawesome.com/fe56654e7e.js" crossorigin="anonymous"></script>
+<script src="js/slide_control.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
