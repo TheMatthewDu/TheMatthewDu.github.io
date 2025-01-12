@@ -10,7 +10,8 @@ mask = np.array([
     [0, -1, 0]
 ])
 
-for file in os.listdir("inputs"):
+#for file in os.listdir("inputs"):
+for file in ["wearable_thumbnail.jpg"]:
     img = cv.imread(f"inputs/{file}")
     # print(file, img.shape)
 
@@ -18,7 +19,8 @@ for file in os.listdir("inputs"):
     img = cv.resize(img, None, fx=scale, fy=scale)
 
     x_, y_ = img.shape[:-1]
-    img = img[x_ // 2 - nx // 2:x_ // 2 + nx // 2, y_ // 2 - ny // 2:y_ // 2 + ny // 2, :]
+    # img = img[x_ // 2 - nx // 2:x_ // 2 + nx // 2, y_ // 2 - ny // 2:y_ // 2 + ny // 2, :]
+    img = img[x_ // 2 - nx // 2 - 300:x_ // 2 + nx // 2 - 300, y_ // 2 - ny // 2:y_ // 2 + ny // 2, :]
 
     img = cv.filter2D(img, 0, mask)
 
