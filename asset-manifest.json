@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f164e189.css",
-    "main.js": "/static/js/main.63c279b0.js",
+    "main.css": "/static/css/main.f0665414.css",
+    "main.js": "/static/js/main.bb72ac39.js",
     "static/js/488.115d0b26.chunk.js": "/static/js/488.115d0b26.chunk.js",
     "static/media/object_tracking.gif": "/static/media/object_tracking.86489963a9c7fb9adcbb.gif",
     "static/media/object_tracking2.gif": "/static/media/object_tracking2.eb31a93921229a4d53c5.gif",
@@ -27,12 +27,12 @@
     "static/media/Gearbox_pic_3.jpg": "/static/media/Gearbox_pic_3.2f667fee8a776bd9d0cd.jpg",
     "static/media/abstract.pdf": "/static/media/abstract.e8fa14901c7c295d95ea.pdf",
     "index.html": "/index.html",
-    "main.f164e189.css.map": "/static/css/main.f164e189.css.map",
-    "main.63c279b0.js.map": "/static/js/main.63c279b0.js.map",
+    "main.f0665414.css.map": "/static/css/main.f0665414.css.map",
+    "main.bb72ac39.js.map": "/static/js/main.bb72ac39.js.map",
     "488.115d0b26.chunk.js.map": "/static/js/488.115d0b26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f164e189.css",
-    "static/js/main.63c279b0.js"
+    "static/css/main.f0665414.css",
+    "static/js/main.bb72ac39.js"
   ]
 }
