@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.f0665414.css",
-    "main.js": "/static/js/main.bb72ac39.js",
+    "main.css": "/static/css/main.9e4aa385.css",
+    "main.js": "/static/js/main.3ef31beb.js",
     "static/js/488.115d0b26.chunk.js": "/static/js/488.115d0b26.chunk.js",
+    "static/media/camera_view_object_tracking.gif": "/static/media/camera_view_object_tracking.2bba743e4796edaa44ee.gif",
     "static/media/object_tracking.gif": "/static/media/object_tracking.86489963a9c7fb9adcbb.gif",
     "static/media/object_tracking2.gif": "/static/media/object_tracking2.eb31a93921229a4d53c5.gif",
     "static/media/poster.pdf": "/static/media/poster.3137291c3b11994c32e7.pdf",
@@ -10,7 +11,6 @@
     "static/media/profile_image2.png": "/static/media/profile_image2.108ed122456c3ac32d34.png",
     "static/media/wearable_thumbnail.png": "/static/media/wearable_thumbnail.7c511fb348beb40f6c33.png",
     "static/media/south_korean_president_picture.png": "/static/media/south_korean_president_picture.c3b5a950ffc23687d925.png",
-    "static/media/affective_gen.png": "/static/media/affective_gen.f327e8a7045d8bbbaf1b.png",
     "static/media/Gearbox_thumbnail.png": "/static/media/Gearbox_thumbnail.50577c21bc9242e33004.png",
     "static/media/IMG_1020.jpg": "/static/media/IMG_1020.91ac5b64b516aac90618.jpg",
     "static/media/IMG_6682.jpg": "/static/media/IMG_6682.99d883d153acff79beab.jpg",
@@ -18,6 +18,7 @@
     "static/media/IMG_6679.jpg": "/static/media/IMG_6679.a15882fc20048bea325c.jpg",
     "static/media/profile_image.png": "/static/media/profile_image.e1ccc02f852c06a67d5e.png",
     "static/media/timetable_thumbnail.png": "/static/media/timetable_thumbnail.ad86168b14b7a3687658.png",
+    "static/media/planner_thumbnail.png": "/static/media/planner_thumbnail.7a1f76a2ae570d431d6b.png",
     "static/media/Gearbox_pic_4.jpg": "/static/media/Gearbox_pic_4.895e006a2652adaa64a4.jpg",
     "static/media/Gearbox_pic_1.jpg": "/static/media/Gearbox_pic_1.19685d9efa4cf68162fd.jpg",
     "static/media/search_bar.png": "/static/media/search_bar.db94c4c189da1d6faed5.png",
@@ -27,12 +28,12 @@
     "static/media/Gearbox_pic_3.jpg": "/static/media/Gearbox_pic_3.2f667fee8a776bd9d0cd.jpg",
     "static/media/abstract.pdf": "/static/media/abstract.e8fa14901c7c295d95ea.pdf",
     "index.html": "/index.html",
-    "main.f0665414.css.map": "/static/css/main.f0665414.css.map",
-    "main.bb72ac39.js.map": "/static/js/main.bb72ac39.js.map",
+    "main.9e4aa385.css.map": "/static/css/main.9e4aa385.css.map",
+    "main.3ef31beb.js.map": "/static/js/main.3ef31beb.js.map",
     "488.115d0b26.chunk.js.map": "/static/js/488.115d0b26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0665414.css",
-    "static/js/main.bb72ac39.js"
+    "static/css/main.9e4aa385.css",
+    "static/js/main.3ef31beb.js"
   ]
 }
