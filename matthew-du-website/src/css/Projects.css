@@ -1,0 +1,154 @@
+.project_body {
+    display: grid;
+    padding: 30px 30px;
+    gap: 20px;
+}
+
+.project {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border: 0 solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.project-thumbnail-img {
+    width: 20%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-description {
+    max-width: 80%;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #003580;
+}
+
+.project-text {
+    font-size: 1rem;
+    color: black;
+    margin-top: 10px;
+}
+
+.project-button {
+    border: 0 solid #009FE3;
+    color: white;
+    background-color: #009FE3;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.project-button:hover {
+    background-color: #003580;
+}
+
+.project-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    z-index: 1000; /* Make sure the overlay appears above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    background-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 90%;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color:  white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.image-container {
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.image {
+    width: 40%; /* Same width for all images */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing */
+    float: left;
+}
+
+.pub-description {
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .project_body {
+        display: block;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .project-description {
+        width: 100%;
+    }
+
+    .project-thumbnail-img {
+        width: 100%;
+        align-items: center;
+    }
+
+    .project-button {
+        display: flex;
+        gap: 5px;
+    }
+
+    .image {
+         width: 100%
+    }
+
+    .pub-description {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

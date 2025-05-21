@@ -1,0 +1,89 @@
+.hero {
+    padding: 100px 30px;
+    text-align: center;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: black;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.banner .text-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 0 60px;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.banner p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: black;
+}
+
+.banner .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #009FE3;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+    background-color: #003580;
+}
+
+.banner .profile-photo {
+    width: auto;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .banner {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .banner .text-container {
+        max-width: 50%;
+        margin-bottom: 0;
+    }
+
+    .banner h1 {
+        font-size: 4rem;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+    }
+
+    .banner .profile-photo {
+        width: 300px;
+        height: 350px;
+        margin-left: 20px;
+    }
+}

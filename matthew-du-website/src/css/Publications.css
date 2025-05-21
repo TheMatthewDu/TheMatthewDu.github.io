@@ -1,0 +1,111 @@
+.publication_body {
+    display: grid;
+    padding: 30px 30px;
+    background-color: #003580;
+    gap: 20px;
+}
+
+.publication {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.publication:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.publication-thumbnail-img {
+    width: 20%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.publication-description {
+    max-width: 80%;
+}
+
+.publication-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f0f0f0;
+}
+
+.publication-text {
+    font-size: 1rem;
+    color: #d3d3d3;
+    margin-top: 10px;
+}
+
+.publication-button {
+    border: 0 solid transparent;
+    color: white;
+    font-weight: bold;
+    background-color: #009FE3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.publication-button:hover {
+    background-color: #666666;
+}
+
+.publication-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    z-index: 1000; /* Make sure the overlay appears above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pub-description {
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+@media (max-width: 768px) {
+    .publication {
+        flex-direction: column;
+    }
+
+    .publication:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .publication_body {
+        display: block;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .publication-description {
+        width: 100%;
+    }
+
+    .publication-thumbnail-img {
+        width: 100%;
+        align-items: center;
+    }
+
+    .publication-button {
+        display: flex;
+        gap: 5px;
+    }
+
+    .pub-description {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
