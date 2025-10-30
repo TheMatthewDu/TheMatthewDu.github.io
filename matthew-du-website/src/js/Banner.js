@@ -23,7 +23,6 @@ function Banner() {
             <div className="banner">
                 <div className="text-container">
                     <h1>Hello! I am Matthew Du</h1>
-                    <p>From Software to Skies: Engineering Access Everywhere</p>
                     <a href="#experiences" className="btn" target="_self">Learn More</a>
                 </div>
                 <img className="profile-photo" src={photos[currentPhoto]} alt="Matthew Du"/>

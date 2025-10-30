@@ -33,7 +33,9 @@ function Achievements() {
                         </li>
                         <li> Faculty Council Standing Committees
                             <ul>
-                                <li>2025-26:
+                                <li><a className="link_format"
+                                       href="https://www.engineering.utoronto.ca/wp-content/uploads/sites/28/2025/10/UAC-membership-2025-2026.pdf">
+                                    2025-26</a>: 
                                     Undergraduate Assessment Committee
                                 </li>
                                 <li><a className="link_format"

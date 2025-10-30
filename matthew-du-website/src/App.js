@@ -21,10 +21,10 @@ function App() {
     }, []);
     return (    
         <div className="App">
-            <AnimatedBackground
-                animationName="geometricShapes"
-                blendMode="lighten"
-            />
+            {/*<AnimatedBackground*/}
+            {/*    animationName="geometricShapes"*/}
+            {/*    blendMode="lighten"*/}
+            {/*/>*/}
             <Header />
             <Banner />
             <Education />

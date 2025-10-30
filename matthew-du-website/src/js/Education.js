@@ -14,7 +14,9 @@ const tablesData = [
             ['CSC236H1', 'Introduction to the Theory of Computation'],
             ['CSC258H1', 'Computer Organization'],
             ['CSC311H1', 'Introduction to Machine Learning'],
-            ['MIE334H1', 'Numerical Methods I']
+            ['MIE334H1', 'Numerical Methods I'],
+            ['ECE344H1', 'Operating Systems'],
+            ['ECE345H1', 'Data Structures and Algorithms']
         ],
         links: [
             'https://artsci.calendar.utoronto.ca/course/csc108h1',
@@ -25,7 +27,9 @@ const tablesData = [
             'https://artsci.calendar.utoronto.ca/course/csc236h1',
             'https://artsci.calendar.utoronto.ca/course/csc258h1',
             'https://artsci.calendar.utoronto.ca/course/csc311h1',
-            'https://engineering.calendar.utoronto.ca/course/mie334h1'
+            'https://engineering.calendar.utoronto.ca/course/mie334h1',
+            'https://engineering.calendar.utoronto.ca/course/ece344h1',
+            'https://engineering.calendar.utoronto.ca/course/ece345h1'
         ]
     },
     {
@@ -101,7 +105,9 @@ const tablesData = [
             ['MIE342H1', 'Circuits with Applications to Mechanical Engineering Systems'],
             ['MIE346H1', 'Digital & Analog Electronics for Mechatronics'],
             ['CHE353H1', 'Engineering Biology'],
-            ['BME331H1', 'Physiological Control Systems']
+            ['BME331H1', 'Physiological Control Systems'],
+            ['MIE404H1', 'Control Systems'],
+            ['MIE458H1', 'Biofluid Mechanics']
         ],
         links: [
             'https://artsci.calendar.utoronto.ca/course/phy152h1',
@@ -109,7 +115,9 @@ const tablesData = [
             'https://engineering.calendar.utoronto.ca/course/mie342h1',
             'https://engineering.calendar.utoronto.ca/course/mie346h1',
             'https://engineering.calendar.utoronto.ca/course/che353h1',
-            'https://engineering.calendar.utoronto.ca/course/bme331h1'
+            'https://engineering.calendar.utoronto.ca/course/bme331h1',
+            'https://engineering.calendar.utoronto.ca/course/mie404h1',
+            'https://engineering.calendar.utoronto.ca/course/mie458h1'
         ]
     },
     {
@@ -146,7 +154,7 @@ function Education() {
                 <div className="left-side">
                     <h1>Education</h1>
                     <p>
-                        I am a <a
+                        I am a 4th-year <a
                         className="link_format"
                         href="https://engineering.calendar.utoronto.ca/section/Mechanical-Engineering"
                     >
@@ -161,10 +169,12 @@ function Education() {
                     </p>
                     <br></br>
                     <p>
-                        I am currently on PEY at <a className="link_format"
-                                                                                        href="https://bombardier.com/en">Bombardier
-                        Aerospace</a>. I will be entering my 4th year of Mechanical Engineering in Sept 2025 and will be
-                        graduating in May 2026.
+                        Broadly speaking, I am interested in the applications of computer vision and graphics in
+                        engineering, including robotic perception, flow visualization for fluid dynamics, and
+                        VR/XR algorithms to support accessibility for individuals with low vision.
+
+                        I completed my PEY Co-op at <a className="link_format" href="https://bombardier.com/en">
+                        Bombardier Aerospace</a>. I will be graduating in May 2026.
                     </p>
                 </div>
 

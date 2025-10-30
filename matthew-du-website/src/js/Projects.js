@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import '../css/Projects.css'
 
 // Logos
-import wearables from '../img/thumbnails/wearable_thumbnail.png'
+import wearables from '../img/thumbnails/wearable_thumbnail_2.png'
 import obj_track from '../img/wearable/object_tracking.gif'
 import obj_track2 from '../img/wearable/object_tracking2.gif'
 import obj_track3 from '../img/wearable/camera_view_object_tracking.gif'
@@ -11,6 +11,7 @@ import wearable_image1 from '../img/wearable/IMG_6679.jpg'
 import wearable_image2 from '../img/wearable/IMG_6682.jpg'
 import wearable_image3 from '../img/wearable/IMG_1018.jpg'
 import wearable_image4 from '../img/wearable/IMG_1020.jpg'
+import wearable_image5 from '../img/thumbnails/wearable_thumbnail.png'
 
 // import affective from '../img/thumbnails/affective_gen.png'
 import planner from '../img/planner/planner_thumbnail.png'
@@ -87,6 +88,8 @@ function Projects() {
                                     <button className="close-button" onClick={handleCloseOverlay2}>&times;</button>
                                     <h2>Wearable Assembly</h2>
                                     <br></br>
+                                    <p>These are previous prototypes that I have made</p>
+                                    <br></br>
                                     <div className="image-container">
                                         <img className="image" src={wearable_image1}
                                              alt="Demonstration of Wearable Camera"/>
@@ -95,6 +98,8 @@ function Projects() {
                                         <img className="image" src={wearable_image3}
                                              alt="Demonstration of Wearable Camera"/>
                                         <img className="image" src={wearable_image4}
+                                             alt="Demonstration of Wearable Camera"/>
+                                        <img className="image" src={wearable_image5}
                                              alt="Demonstration of Wearable Camera"/>
                                     </div>
                                 </div>
@@ -137,7 +142,6 @@ function Projects() {
                         </p>
                         <br></br>
                         <button className="project-button" onClick={handleButtonClick3}>Images</button>
-                        {/* Overlay - only visible if showOverlay is true */}
                         {showOverlay3 && (
                             <div className="project-overlay">
                                 <div className="overlay-content">
