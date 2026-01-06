@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e4aa385.css",
-    "main.js": "/static/js/main.910deb6a.js",
+    "main.css": "/static/css/main.3ee9e2bc.css",
+    "main.js": "/static/js/main.3cd60d60.js",
     "static/js/488.115d0b26.chunk.js": "/static/js/488.115d0b26.chunk.js",
     "static/media/camera_view_object_tracking.gif": "/static/media/camera_view_object_tracking.2bba743e4796edaa44ee.gif",
     "static/media/object_tracking.gif": "/static/media/object_tracking.86489963a9c7fb9adcbb.gif",
@@ -18,6 +18,7 @@
     "static/media/IMG_1018.jpg": "/static/media/IMG_1018.8338b85572d3521beeb7.jpg",
     "static/media/IMG_6679.jpg": "/static/media/IMG_6679.a15882fc20048bea325c.jpg",
     "static/media/profile_image.png": "/static/media/profile_image.e1ccc02f852c06a67d5e.png",
+    "static/media/composition1.mp3": "/static/media/composition1.d809f0f2514f7936f9d7.mp3",
     "static/media/timetable_thumbnail.png": "/static/media/timetable_thumbnail.ad86168b14b7a3687658.png",
     "static/media/planner_thumbnail.png": "/static/media/planner_thumbnail.7a1f76a2ae570d431d6b.png",
     "static/media/Gearbox_pic_4.jpg": "/static/media/Gearbox_pic_4.895e006a2652adaa64a4.jpg",
@@ -29,12 +30,12 @@
     "static/media/Gearbox_pic_3.jpg": "/static/media/Gearbox_pic_3.2f667fee8a776bd9d0cd.jpg",
     "static/media/abstract.pdf": "/static/media/abstract.e8fa14901c7c295d95ea.pdf",
     "index.html": "/index.html",
-    "main.9e4aa385.css.map": "/static/css/main.9e4aa385.css.map",
-    "main.910deb6a.js.map": "/static/js/main.910deb6a.js.map",
+    "main.3ee9e2bc.css.map": "/static/css/main.3ee9e2bc.css.map",
+    "main.3cd60d60.js.map": "/static/js/main.3cd60d60.js.map",
     "488.115d0b26.chunk.js.map": "/static/js/488.115d0b26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e4aa385.css",
-    "static/js/main.910deb6a.js"
+    "static/css/main.3ee9e2bc.css",
+    "static/js/main.3cd60d60.js"
   ]
 }
