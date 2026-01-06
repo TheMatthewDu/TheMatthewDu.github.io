@@ -20,12 +20,12 @@ function Publications() {
                 <div className="publication">
                     <img className="publication-thumbnail-img" src={paper_img} alt="Publication 1"/>
                     <div className="publication-details">
-                        <h3 className="publication-title">A Cable-Driven Anthropomorphic Soft Robotic Hand with an
+                        <h3 className="publication-title">A Cable-Driven Soft Robotic Hand with an
                             In-hand RGB-D Camera for Dexterous Grasping and Manipulation</h3>
                         <p className="publication-text">Zhanfeng Zhou, Runze Zuo, Matthew Du, Shawn Wang,
                             Sebastian Levy, Yu Sun, Xinyu Liu</p>
                         <br></br>
-                        <button className='publication-button'>Paper to be published shortly</button>
+                        <a className='publication-button' href="https://doi.org/10.1109/TRO.2025.3641751">Paper</a>
                         &nbsp;
                         <a className="publication-button" href="https://event.fourwaves.com/csme-cfd2024/abstracts/903abe77-1edb-492e-8c4f-f024a193fd76">Conference Abstract</a>
                         &nbsp;

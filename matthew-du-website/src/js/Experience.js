@@ -26,23 +26,15 @@ function Experience() {
                     </button>
                     {showMore1 && (
                         <ul>
-                            <li>Collaborated with engineers to analyze and evaluate aircraft performance data,
-                                conducting
-                                and debugging FORTRAN simulations to assess aerodynamic characteristics and optimize
-                                aircraft configurations for enhanced efficiency.
-                            </li>
-                            <lI>Assisted in the development and validation of performance models, created automation
-                                scripts
-                                utilizing MATLAB, Python, and software tools to predict flight performance across
-                                various
-                                operating conditions and configurations.
-                            </lI>
-                            <lI>Contributed to testing and certification efforts by supporting verification processes
-                                and
-                                interpreting results, analyzing anomalies to ensure compliance with industry standards
-                                and
-                                legal requirements.
-                            </lI>
+                            <li> Supported system tests on test aircraft and rigs, validating and debugging results.
+                                Leveraged aerodynamics knowledge to develop flight plans for performance tests,
+                                aligning with certification requirements and client needs. </li>
+                            <li> Designed and implemented tools using Python, HTML, and FORTRAN to process and analyze
+                                flight performance data. Developed interactive visualizations to monitor aircraft
+                                parameters and ensure regulatory compliance. </li>
+                            <li> Assisted recruitment initiatives by launching a pilot mentorship program with local
+                                universities, successfully connecting 25 students across three institutions with
+                                industry professionals. </li>
                         </ul>
                     )}
                 </div>
@@ -84,19 +76,28 @@ function Experience() {
                     </button>
                     {showMore3 && (
                         <ul>
-                            <li><b>Equity &amp; Inclusivity Project Director (Apr 2024 - Present)</b>: Led EDI
-                                initiatives for the Engineering Society, introduced equitable exam policies for 500+
-                                students, advocated for improved building accessibility, modernized directorship assets,
-                                organized EDI events to promote awareness, and supported establishing EDI framework in
-                                governance.
+                            <li><b>Equity &amp; Inclusivity Project Director (Apr 2024 - Present)</b>
                             </li>
-                            <li><b>Third-Year Class Representative (Sep 2023 - Apr 2024)</b>: Elected representative for
-                                200+ mechanical engineering students, facilitating communication with instructors,
-                                resolving issues, and advocating for better course and co-op opportunities.
+                            <ul>
+                                <li>Led the EDI portfolio for EngSoc. Reactivated the directorship after a 2-year hiatus.</li>
+                                <li>Represented the society in governance proceedings, notably the facilities planning. Modernized directorship assets (updating logo, building inventory, reactivating social media) and reactivated key leadership roles within the society; engaged with EDI community clubs and design teams </li>
+                                <li>Advocated for enhanced building accessibility, improved quality of exam accommodations for students registered with accessibility services, and inclusive engineering design. Authored two reports that identified major accessibility concerns, driving strategic improvements.</li>
+                                <li>Organized impactful EDI events and coordinated commemorative events to promote conversation and engage action within the engineering community</li>
+                            </ul>
+                            <li><b>Third-Year (Sep 2023 - Apr 2024) &amp; Fourth-Year (Sep 2025 - Present) Mechanical Engineering Class Representative</b>
+                                <ul>
+                                    <li>Elected representative for 200+ mechanical engineering students, facilitating communication with instructors, resolving issues, and advocating for better course and co-op opportunities.</li>
+                                    <li>Organized the Iron Ring afterparty for the graduating mechanical engineering class. Most critically, I secured a venue last minute</li>
+                                    <li>Major contributions to faculty council, namely formal definition of Prerequisites, Corequisites, and Exclusions and updates to mechanical engineering curriculum.</li>
+                                </ul>
                             </li>
-                            <li><b>Faculty Council Standing Committee Representative (Sept 2022 - Present)</b>: Student
-                                representative in Faculty council committees, representing the students in governance
-                                matters; assessed appellants in appeal board proceedings.
+                            <li><b>Faculty Council Standing Committee Representative (Sep 2022 - Present)</b>
+                                <ul>
+                                    <li><b>Undergraduate Academic Appeals Board (AAB[U]) (Sep 2022 - Jul 2025)</b>: Heard appeals from undergraduate students against decisions relating to petitions for exemptions from the application of academic regulations or standards and to make rulings on such appeals</li>
+                                    <li><b>Inclusivity, Diversity, Equity Advisory (IDEA) Committee (Jan 2023 - Jul 2023, Aug 2024 - Jul 2025)</b>: Pioneered the accessibility movement within this committee, advocated for the rights of students who are registered with accessibility services, resulting in a presentation by Accommodated Testing Services and Accessibility Services at the October 2023 meeting of the Faculty Council of the Faculty of Applied Science and Engineering regarding their services and best practices when submitting assessments with them, and pushed for the establishment of subclasses of type C examinations to ensure fairness for students registered with Accessibility Services</li>
+                                    <li><b>Undergraduate Assessment Committee (UAC) (Sep 2025 - present)</b>: Conducted community surveys and represented students’ major policy discussions, such as revised deferred exam policy. Student member of the Academic Policies Working Group to streamline presentation of academic calendar
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     )}

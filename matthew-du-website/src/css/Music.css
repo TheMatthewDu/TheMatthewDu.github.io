@@ -1,0 +1,29 @@
+.music_body {
+    display: grid;
+    padding: 30px 30px;
+    gap: 20px;
+}
+
+.music {
+    padding: 80px;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.music-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .music_body {
+        display: block;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .music-description {
+        width: 100%;
+    }
+}
