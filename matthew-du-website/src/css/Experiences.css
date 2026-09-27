@@ -7,9 +7,10 @@
     position: relative;
     z-index: 1000;
 }
+
 /* Experiences Section */
 .experiences {
-    background-color: #003580;
+    background-color: #1E3765;
     padding: 30px 30px;
 }
 
@@ -75,6 +76,14 @@ ul li::before {
     position: absolute;
     left: -20px;
     top: -6px;
+}
+
+.experience a {
+    color: #F1C500;
+}
+
+.experience a:hover {
+    color: #FFD700;
 }
 
 .show-button {

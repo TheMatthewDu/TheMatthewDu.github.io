@@ -10,7 +10,6 @@
     color: black;
 }
 
-
 .banner {
     display: flex;
     justify-content: center;
@@ -33,26 +32,9 @@
 }
 
 .banner p {
-    margin: 10px 0;
+    margin: 0 0;
     font-size: 1rem;
     color: black;
-}
-
-.banner .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background: #009FE3;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.banner .btn:hover {
-    background-color: #003580;
 }
 
 .banner .profile-photo {

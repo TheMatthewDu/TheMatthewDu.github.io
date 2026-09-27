@@ -77,11 +77,12 @@ h1, h2, h3 {
 }
 
 .link_format {
-    color: #FEBA02;
+    color: #6D247A;
+    font-weight: bold;
 }
 
 .link_format:hover {
-    color: #FFFF00;
+    color: #AB1368;
 }
 
 footer {

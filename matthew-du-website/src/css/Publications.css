@@ -1,7 +1,7 @@
 .publication_body {
     display: grid;
     padding: 30px 30px;
-    background-color: #003580;
+    background-color: #1E3765;
     gap: 20px;
 }
 
@@ -14,7 +14,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.publication:nth-child(even) {
+.publication:nth-child(odd) {
     flex-direction: row-reverse;
 }
 
@@ -46,14 +46,14 @@
     border: 0 solid transparent;
     color: white;
     font-weight: bold;
-    background-color: #009FE3;
+    background-color: #007FA3;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .publication-button:hover {
-    background-color: #666666;
+    background-color: #6FC7EA;
 }
 
 .publication-overlay {

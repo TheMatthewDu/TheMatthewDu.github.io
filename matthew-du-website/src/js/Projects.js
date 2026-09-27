@@ -16,17 +16,26 @@ import wearable_image5 from '../img/thumbnails/wearable_thumbnail.png'
 // import affective from '../img/thumbnails/affective_gen.png'
 import planner from '../img/planner/planner_thumbnail.png'
 
-import gearbox from "../img/thumbnails/Gearbox_thumbnail.png"
-import gearbox1 from '../img/gearbox/Gearbox_pic_1.jpg'
-import gearbox2 from '../img/gearbox/Gearbox_pic_2.jpg'
-import gearbox3 from '../img/gearbox/Gearbox_pic_3.jpg'
-import gearbox4 from '../img/gearbox/Gearbox_pic_4.jpg'
+// import gearbox from "../img/thumbnails/Gearbox_thumbnail.png"
+// import gearbox1 from '../img/gearbox/Gearbox_pic_1.jpg'
+// import gearbox2 from '../img/gearbox/Gearbox_pic_2.jpg'
+// import gearbox3 from '../img/gearbox/Gearbox_pic_3.jpg'
+// import gearbox4 from '../img/gearbox/Gearbox_pic_4.jpg'
+//
+// import timetable from '../img/thumbnails/timetable_thumbnail.png'
+// import timetable1 from "../img/timetable_app/search_bar.png"
+// import timetable2 from "../img/timetable_app/add_course_page.png"
+// import timetable3 from "../img/timetable_app/main_screen.png"
 
-import timetable from '../img/thumbnails/timetable_thumbnail.png'
-import timetable1 from "../img/timetable_app/search_bar.png"
-import timetable2 from "../img/timetable_app/add_course_page.png"
-import timetable3 from "../img/timetable_app/main_screen.png"
+import capstone from '../img/thumbnails/capstone_thumbnail.png'
 
+import thesis from '../img/thumbnails/thesis_thumbnail.png'
+import thesis1 from '../img/thesis/caseA1_isosurface.png'
+import thesis2 from '../img/thesis/caseC1_isosurface.png'
+import thesis3 from '../img/thesis/caseC2_isosurface.png'
+import thesis4 from '../img/thesis/caseC3_isosurface.png'
+import thesis5 from '../img/thesis/caseC4_isosurface.png'
+import thesis6 from '../img/thesis/pipeline.png'
 
 function Projects() {
     const [showOverlay1, setShowOverlay1] = useState(false);
@@ -48,6 +57,91 @@ function Projects() {
         <section id="projects">
             <div className="project_body">
                 <h2 className="section-title" style={{color: 'black'}}>Projects</h2>
+
+                <div className="project">
+                    <img className="project-thumbnail-img" src={thesis} alt="Thesis Project"/>
+                    <div className="project-description">
+                        <h3 className="project-title">Identification and Tracking of Vortex Structures in Cerebrovascular Flows from High-Fidelity CFD</h3>
+                        <p className="project-text">
+                            This is my Undergraduate Thesis Project, where I was working on Vortex Detection in
+                            Cerebrovascular Computational Fluid Dynamics. I developed a Simple Online and Realtime
+                            Tracking (SORT)-based pipeline to track the Q-Criterion isosurfaces computed from the
+                            output to high fidelity CFD analyses.
+                        </p>
+                        <br></br>
+
+                        <button className="project-button" onClick={handleButtonClick1}>Figures</button>
+                        {/* Overlay - only visible if showOverlay is true */}
+                        {showOverlay1 && (
+                            <div className="project-overlay">
+                                <div className="overlay-content">
+                                    <button className="close-button" onClick={handleCloseOverlay1}>&times;</button>
+                                    <h2>Select Figures</h2>
+                                    <div className="image-container">
+                                        <img className="image" src={thesis6}
+                                             alt="Thesis Algorithm"/>
+                                        <img className="image" src={thesis1}
+                                             alt="Thesis Isosurface 1"/>
+                                        <img className="image" src={thesis2}
+                                             alt="Thesis Isosurface 2"/>
+                                        <img className="image" src={thesis3}
+                                             alt="Thesis Isosurface 3"/>
+                                        <img className="image" src={thesis4}
+                                             alt="Thesis Isosurface 2"/>
+                                        <img className="image" src={thesis5}
+                                             alt="Thesis Isosurface 3"/>
+
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+
+                <div className="project">
+                    <img className="project-thumbnail-img" src={capstone} alt="Capstone Project Profile"/>
+                    <div className="project-description">
+                        <h3 className="project-title">Portable Upper Limb Haptic Exoskeleton for Blind and Low-Vision
+                            Individuals Navigation</h3>
+                        <p className="project-text">
+                            This capstone project developed a wearable haptic exoskeleton to support navigation for
+                            blind and low-vision users by translating virtual information into physical haptic cues.
+                            Building on an existing stationary VR-haptic glove system, the design objective was to
+                            create a portable and programmable alternative that preserves meaningful force feedback
+                            while improving mobility, comfort, and real-world usability. A digital twin of the physical
+                            design was created as a basis for the virtual environment for user exploration using the
+                            Unity Software and the prototype CAD files.
+                        </p>
+                        <br></br>
+
+                        <button className="project-button" onClick={handleButtonClick2}>Other Images</button>
+                        {/* Overlay - only visible if showOverlay is true */}
+                        {showOverlay2 && (
+                            <div className="project-overlay">
+                                <div className="overlay-content">
+                                    <button className="close-button" onClick={handleCloseOverlay2}>&times;</button>
+                                    <h2>Wearable Assembly</h2>
+                                    <br></br>
+                                    <p>These are previous prototypes that I have made</p>
+                                    <br></br>
+                                    <div className="image-container">
+                                        <img className="image" src={wearable_image1}
+                                             alt="Demonstration of Wearable Camera"/>
+                                        <img className="image" src={wearable_image2}
+                                             alt="Demonstration of Wearable Camera"/>
+                                        <img className="image" src={wearable_image3}
+                                             alt="Demonstration of Wearable Camera"/>
+                                        <img className="image" src={wearable_image4}
+                                             alt="Demonstration of Wearable Camera"/>
+                                        <img className="image" src={wearable_image5}
+                                             alt="Demonstration of Wearable Camera"/>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+
                 <div className="project">
                     <img className="project-thumbnail-img" src={wearables} alt="Project 1"/>
                     <div className="project-description">
@@ -61,12 +155,12 @@ function Projects() {
                         </p>
                         <br></br>
 
-                        <button className="project-button" onClick={handleButtonClick1}>Algorithm</button>
+                        <button className="project-button" onClick={handleButtonClick3}>Algorithm</button>
                         {/* Overlay - only visible if showOverlay is true */}
-                        {showOverlay1 && (
+                        {showOverlay3 && (
                             <div className="project-overlay">
                                 <div className="overlay-content">
-                                    <button className="close-button" onClick={handleCloseOverlay1}>&times;</button>
+                                    <button className="close-button" onClick={handleCloseOverlay3}>&times;</button>
                                     <h2>Algorithm</h2>
                                     <div className="image-container">
                                         <img className="image" src={obj_track}
@@ -80,12 +174,12 @@ function Projects() {
                             </div>
                         )}
                         &nbsp;
-                        <button className="project-button" onClick={handleButtonClick2}>Mechanical</button>
+                        <button className="project-button" onClick={handleButtonClick4}>Mechanical</button>
                         {/* Overlay - only visible if showOverlay is true */}
-                        {showOverlay2 && (
+                        {showOverlay4 && (
                             <div className="project-overlay">
                                 <div className="overlay-content">
-                                    <button className="close-button" onClick={handleCloseOverlay2}>&times;</button>
+                                    <button className="close-button" onClick={handleCloseOverlay4}>&times;</button>
                                     <h2>Wearable Assembly</h2>
                                     <br></br>
                                     <p>These are previous prototypes that I have made</p>
@@ -129,78 +223,78 @@ function Projects() {
                     </div>
                 </div>
 
-                <div className="project">
-                    <img className="project-thumbnail-img" src={gearbox} alt="Project 3"/>
-                    <div className="project-description">
-                        <h3 className="project-title">3D-Printed Gearbox</h3>
-                        <p className="project-text">
-                            Collaborated with a team of six to design and 3D-print a custom gearbox, utilizing a 3:1
-                            gear reduction ratio. The design features a non-collinear input and output shaft offset by
-                            90 degrees. Achieved the desired gear ratio using two spur gears, while incorporating two
-                            bevel gears at a 1:1 ratio to ensure the 90-degree offset. Contributed to the project’s
-                            overall mechanical design and 3D printing, optimizing for ease of assembly and strength.
-                        </p>
-                        <br></br>
-                        <button className="project-button" onClick={handleButtonClick3}>Images</button>
-                        {showOverlay3 && (
-                            <div className="project-overlay">
-                                <div className="overlay-content">
-                                    <button className="close-button" onClick={handleCloseOverlay3}>&times;</button>
-                                    <h2>Image Gallery</h2>
-                                    <div className="image-container">
-                                        <img className="image" src={gearbox1}
-                                             alt="Demonstration of Wearable Camera"/>
-                                        <img className="image" src={gearbox2}
-                                             alt="Demonstration of Wearable Camera"/>
-                                        <img className="image" src={gearbox3}
-                                             alt="Demonstration of Wearable Camera"/>
-                                        <img className="image" src={gearbox4}
-                                             alt="Demonstration of Wearable Camera"/>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </div>
+                {/*<div className="project">*/}
+                {/*    <img className="project-thumbnail-img" src={gearbox} alt="Project 3"/>*/}
+                {/*    <div className="project-description">*/}
+                {/*        <h3 className="project-title">3D-Printed Gearbox</h3>*/}
+                {/*        <p className="project-text">*/}
+                {/*            Collaborated with a team of six to design and 3D-print a custom gearbox, utilizing a 3:1*/}
+                {/*            gear reduction ratio. The design features a non-collinear input and output shaft offset by*/}
+                {/*            90 degrees. Achieved the desired gear ratio using two spur gears, while incorporating two*/}
+                {/*            bevel gears at a 1:1 ratio to ensure the 90-degree offset. Contributed to the project’s*/}
+                {/*            overall mechanical design and 3D printing, optimizing for ease of assembly and strength.*/}
+                {/*        </p>*/}
+                {/*        <br></br>*/}
+                {/*        <button className="project-button" onClick={handleButtonClick3}>Images</button>*/}
+                {/*        {showOverlay3 && (*/}
+                {/*            <div className="project-overlay">*/}
+                {/*                <div className="overlay-content">*/}
+                {/*                    <button className="close-button" onClick={handleCloseOverlay3}>&times;</button>*/}
+                {/*                    <h2>Image Gallery</h2>*/}
+                {/*                    <div className="image-container">*/}
+                {/*                        <img className="image" src={gearbox1}*/}
+                {/*                             alt="Demonstration of Wearable Camera"/>*/}
+                {/*                        <img className="image" src={gearbox2}*/}
+                {/*                             alt="Demonstration of Wearable Camera"/>*/}
+                {/*                        <img className="image" src={gearbox3}*/}
+                {/*                             alt="Demonstration of Wearable Camera"/>*/}
+                {/*                        <img className="image" src={gearbox4}*/}
+                {/*                             alt="Demonstration of Wearable Camera"/>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*        )}*/}
+                {/*    </div>*/}
+                {/*</div>*/}
 
-                <div className="project">
-                    <img className="project-thumbnail-img" src={timetable} alt="Project 4"/>
-                    <div className="project-description">
-                        <h3 className="project-title">Java Timetable Scheduling App</h3>
-                        <p className="project-text">
-                            Led a team of seven students to develop a timetable planning tool in Java, integrating the
-                            (now-deprecated) University of Toronto Course Finder through the JSoup library. The tool
-                            features GUI built with Java Swing, allowing students to search and add courses or
-                            other tasks to their schedules. Implemented functionality for saving and loading
-                            timetables using a custom file extension for serialized data storage. Additionally,
-                            designed and integrated a Depth First Search (DFS) algorithm to automatically schedule
-                            multiple courses into students’ timetables.
-                        </p>
-                        <br></br>
-                        <a href="https://github.com/matthewrhdu/sout-this_is_our_teamname-forked-CSC207H1-Project">
-                            <button className="project-button">Repository</button>
-                        </a>
-                        &nbsp;
-                        <button className="project-button" onClick={handleButtonClick4}>Images</button>
-                        {/* Overlay - only visible if showOverlay is true */}
-                        {showOverlay4 && (
-                            <div className="project-overlay">
-                                <div className="overlay-content">
-                                    <button className="close-button" onClick={handleCloseOverlay4}>&times;</button>
-                                    <h2>Image Gallery</h2>
-                                    <div className="image-container">
-                                        <img className="image" src={timetable1}
-                                             alt="Demonstration of Wearable Camera"/>
-                                        <img className="image" src={timetable2}
-                                             alt="Demonstration of Wearable Camera"/>
-                                        <img className="image" src={timetable3}
-                                             alt="Demonstration of Wearable Camera"/>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </div>
+                {/*<div className="project">*/}
+                {/*    <img className="project-thumbnail-img" src={timetable} alt="Project 4"/>*/}
+                {/*    <div className="project-description">*/}
+                {/*        <h3 className="project-title">Java Timetable Scheduling App</h3>*/}
+                {/*        <p className="project-text">*/}
+                {/*            Led a team of seven students to develop a timetable planning tool in Java, integrating the*/}
+                {/*            (now-deprecated) University of Toronto Course Finder through the JSoup library. The tool*/}
+                {/*            features GUI built with Java Swing, allowing students to search and add courses or*/}
+                {/*            other tasks to their schedules. Implemented functionality for saving and loading*/}
+                {/*            timetables using a custom file extension for serialized data storage. Additionally,*/}
+                {/*            designed and integrated a Depth First Search (DFS) algorithm to automatically schedule*/}
+                {/*            multiple courses into students’ timetables.*/}
+                {/*        </p>*/}
+                {/*        <br></br>*/}
+                {/*        <a href="https://github.com/matthewrhdu/sout-this_is_our_teamname-forked-CSC207H1-Project">*/}
+                {/*            <button className="project-button">Repository</button>*/}
+                {/*        </a>*/}
+                {/*        &nbsp;*/}
+                {/*        <button className="project-button" onClick={handleButtonClick4}>Images</button>*/}
+                {/*        /!* Overlay - only visible if showOverlay is true *!/*/}
+                {/*        {showOverlay4 && (*/}
+                {/*            <div className="project-overlay">*/}
+                {/*                <div className="overlay-content">*/}
+                {/*                    <button className="close-button" onClick={handleCloseOverlay4}>&times;</button>*/}
+                {/*                    <h2>Image Gallery</h2>*/}
+                {/*                    <div className="image-container">*/}
+                {/*                        <img className="image" src={timetable1}*/}
+                {/*                             alt="Demonstration of Wearable Camera"/>*/}
+                {/*                        <img className="image" src={timetable2}*/}
+                {/*                             alt="Demonstration of Wearable Camera"/>*/}
+                {/*                        <img className="image" src={timetable3}*/}
+                {/*                             alt="Demonstration of Wearable Camera"/>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*        )}*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </div>
         </section>
     )

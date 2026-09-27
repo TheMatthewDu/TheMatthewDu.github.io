@@ -6,7 +6,7 @@ import Projects from "./js/Projects";
 import Publications from "./js/Publications";
 import Education from "./js/Education";
 import Achievements from "./js/Achievements";
-import Music from "./js/Music";
+import Miscellaneous from "./js/Miscellaneous";
 
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 
@@ -16,12 +16,12 @@ function App() {
         <div className="App">
             <Header />
             <Banner />
-            <Education />
-            <Achievements />
             <Publications />
             <Projects />
             <Experience />
-            <Music />
+            <Achievements />
+            <Education />
+            <Miscellaneous />
             <footer id="contacts">
                 <h1>Contact Me</h1>
                 <p>Feel free to reach out to me if you would like to chat about anything!</p>

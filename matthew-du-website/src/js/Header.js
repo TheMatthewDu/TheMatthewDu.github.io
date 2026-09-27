@@ -19,7 +19,7 @@ function Header() {
                     <a href="#publications">Publications</a>
                     <a href="#projects">Projects</a>
                     <a href="#experiences">Experience</a>
-                    <a href="#music">Music</a>
+                    <a href="#miscellaneous">Miscellaneous</a>
                     <a href="#contacts">Contacts</a>
                 </div>
                 <div className="hamburger" onClick={toggleMenu}>

@@ -1,0 +1,51 @@
+.misc_body {
+    display: grid;
+    padding: 30px 30px;
+    gap: 20px;
+}
+
+.misc_body p  {
+    text-align: center;
+    color: #000000;
+}
+
+.misc {
+    padding: 80px;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.misc_title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+.misc-subtitle {
+    color: #000000;
+    text-align: center;
+}
+
+.misc_body ul li {
+    color: #000000;
+    display: list-item;
+}
+
+.misc_body ul {
+    list-style-type: disc;
+    padding-left: 40px; /* important for indentation */
+}
+
+@media (max-width: 768px) {
+    .misc_body {
+        display: block;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .music-description {
+        width: 100%;
+    }
+}
