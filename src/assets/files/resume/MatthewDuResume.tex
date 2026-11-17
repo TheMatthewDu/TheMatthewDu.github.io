@@ -1,0 +1,129 @@
+\documentclass[letterpaper, 10pt]{article}
+\usepackage[
+left=0.5in,
+right=0.5in,
+top=0.25in,
+bottom=0.5in
+]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{color}
+
+\usepackage[default, scale=0.99]{sourcesans}
+\usepackage[T1]{fontenc}
+
+\parskip=0in
+\parindent=0cm
+\setlist{noitemsep, topsep=0pt, leftmargin=1.5em}
+\tolerance=10000
+\hyphenpenalty=10000
+\pagestyle{empty} 
+
+\definecolor{maincol}{RGB}{30, 55, 101}
+
+% Adjust section spacing
+\titleformat{\section}
+{\vspace{-0.4 cm}\large\bfseries\color{maincol}}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+\titleformat{\subsection}
+{\bfseries\color{maincol}}{\thesection}{1em}{}[]
+
+\newcommand{\vspa}{\vspace{0.1cm}}
+\begin{document}
+	\begin{center}
+		\textbf{\Huge\color{maincol} Matthew Du} \\ \vspace{0.2cm}
+		{\small
+			{\color{maincol}\faEnvelope} \quad \href{mailto:matthew.du@mail.utoronto.ca}{matthew.du@mail.utoronto.ca} \quad \quad \quad
+			{\color{maincol}\faPhone*} \quad (416) 822-2468 \quad \quad \quad
+			{\color{maincol}\faLinkedinIn} \quad \href{www.linkedin.com/in/thematthewdu}{thematthewdu} \quad \quad \quad
+			{\color{maincol}\faGithub} \quad \href{thematthewdu.github.io}{thematthewdu.github.io}
+		}
+	\end{center}
+	
+	\section*{\faUniversity \quad \textsc{Education}}
+	\textbf{University of Toronto, Toronto, ON, Canada} \hfill \textit{Expected Graduation: Jun 2028} \\
+	\textsc{Masters in Applied Science, Mechanical \& Industrial Engineering} \\
+	\textit{Thesis}: Image-Based Cerebrovascular Modeling for CFD Studies Using Geometry Processing and Computer Vision Techniques
+	
+	\vspa
+	
+	\textbf{University of Toronto, Toronto, ON, Canada} \hfill \textit{Sep 2021 --- May 2026} \\
+	\textsc{Bachelors in Applied Science, Mechanical Engineering; 
+		\href{https://artsci.calendar.utoronto.ca/section/Computer-Science}{Computer Science} and
+		\href{https://engineering.calendar.utoronto.ca/minor-robotics-and-mechatronics-aeminram}{Robotics \& Mechatronics} Minors
+	} \hfill \textit{GPA: 3.75/4.00}
+		
+	\vspa
+	
+	\section*{\faUsers \quad \textsc{Activities}}
+	\textbf{Teaching Assistant --- ESC180H1 (Introduction to Computer Programming)} \hfill \textit{Sep 2026 --- Dec 2026} \\
+	\textsc{Faculty of Applied Science \& Engineering at the University of Toronto}
+
+	Assisted students during programming labs and lectures, graded exams and assignments, and provided instruction on introduction to computer programming in Python, C, memory models, complexity analysis, recursion, and fundamental algorithms.
+
+	\vspa 
+
+	\textbf{Faculty Council Leadership} \hfill \textit{Sep 2022 --- Jun 2026} \\
+	\textsc{Faculty of Applied Science \& Engineering at the University of Toronto}
+	\begin{itemize}
+		\item \textit{Class Representative: 3rd-Year (Sep 2023 --- Apr 2024), 4th-Year (Apr 2025 --- Apr 2026)}: Elected representative for 200+ mechanical engineering students, resolving course issues, planing social events, and advocating for better course and co-op opportunities.	
+		
+		\item \textit{Equity \& Inclusivity Project Director (Apr 2024 --- Apr 2025)}: Led EDI initiatives for 500+ engineering students, advancing equitable exam policies, accessibility, EDI events, and governance frameworks.
+		
+		\item \textit{Faculty Council Standing Committee Representative (Sep 2022 --- Jun 2026)}: Student representative in Faculty council committees, representing the students in governance matters; assessed appellants in appeal board proceedings.
+	\end{itemize}
+
+	\vspa
+	
+	\section*{\faBriefcase \quad \textsc{Experiences}}
+	\textbf{Summer Research Assistant} \hfill \textit{June 2026 --- Aug 2026} \\
+	\textsc{\href{https://bsl.mie.utoronto.ca/}{Biomedical Simulations Lab (BSL)}, University of Toronto}
+	\begin{itemize}
+		\item Developed a novel cut-plane algorithm based on the Heat Method to identify optimal bijective cut planes for tortuous vessel geometries, achieving >50\% fewer plane intersections in dense geometries and outperforming state-of-the-art methods
+		
+		\item Devised a medical image segmentation pipeline that processes medical images into 3D geometries, leveraging computer vision and deep learning architectures to accelerate physician segmentation workflows and improving accuracy
+		
+		\item Created a parallelized High Performance Computing (HPC) optimized automated vortex detection pipeline in Python, considering memory utilization and computational complexity, on the Q-criterion field for Computational Fluid Dynamics (CFD) analysis
+	\end{itemize}
+	
+	\vspa
+	
+	\textbf{Aircraft Performance (Globals) Engineering Intern} \hfill \textit{May 2024 --- Aug 2025} \\
+	\textsc{\href{https://bombardier.com/en}{Bombardier Aerospace, Technical Engineering}}
+	\begin{itemize}		
+		\item Generated certified and operational performance data (takeoff, landing, and mission) using FORTRAN programming for Flight Manuals (QRH, FCOM, AFM) and Flight Management Systems (FMS) for new and derivative aircraft programs
+		
+		\item Supported flight testing activities by designing interactive statistical visualizations of measured aircraft skin waviness with Python and HTML to ensure safety and compliance to airworthiness requirements
+		
+		\item Assisted in responding to customer comments and produced performance data for sales and marketing campaigns by analyzing flight plans for enroute (winds, altitude, speeds) and runway conditions
+	\end{itemize}
+	
+	\vspa
+	
+	\textbf{Undergraduate Research Student} \hfill \textit{May 2022 --- Aug 2022} \\
+	\textsc{\href{https://liulab.mie.utoronto.ca/}{Microfluidics and BioMEMS Lab (MBL)}, University of Toronto}
+	\begin{itemize}
+		\item Designed a computer vision and robotic manipulation pipeline for a soft robotic gripper, enabling secure pickup of objects from tables and safe object pickup from a user's hand for manufacturing and human-computer interaction (HCI) applications
+		
+		\item Developed computer vision algorithms for object detection, segmentation, and 3D localization from RGB-D data in cluttered environments using point-cloud representations to generate reliable grasp trajectories
+		
+		\item Built a dataset of hand pose images for machine learning and tracking metrics to support safety in grasp planning, in-hand manipulation, and object localization
+	\end{itemize}
+	
+	% \vspa
+	
+	% \textbf{Publication}: \\
+	% Z. Zhou, R. Zuo, \textbf{M. Du}, S. Wang, S. Levy, Y. Sun, and X. Liu, ``A cable-driven soft robotic hand with an in-hand RGB-D camera for dexterous grasping and manipulation,'' \textit{IEEE Transactions on Robotics}, pp. 1–19, 2025, doi: \href{doi.org/10.1109/TRO.2025.3641751}{10.1109/TRO.2025.3641751}.
+	
+	\vspa
+	
+	\section*{\faCog \quad \textsc{Skills and Interests}}
+	\begin{itemize}[leftmargin=*]
+		\item \textbf{Programming Languages}: Python, C/C++, MATLAB, FORTRAN, HTML/CSS/Javascript, Shell Scripts (bash, zsh)
+		\item \textbf{Engineering Software}: SolidWorks, Autodesk (EAGLE, AutoCAD, Fusion 360), ANSYS (FEA, Fluent), LTSpice, Logisim-evolution
+		\item \textbf{Miscellaneous}: Linux/UNIX, Git/GitHub, Docker, Microsoft Office Suite (Word, Excel, PowerPoint)
+		\item \textbf{Interests}: Geometry Processing, Physics-Based Simulations, Accessible \& Assistive Technologies
+	\end{itemize}
+\end{document}
